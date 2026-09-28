@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meridian Labs | Websites and lead generation for Cork trades</title>
+<meta name="description" content="Meridian Labs builds websites for trades in Cork, runs your Facebook and Instagram ads, and sets up an assistant that texts every new enquiry within 60 seconds and books good jobs into your calendar.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meridian Labs">
+<meta property="og:title" content="Meridian Labs | Websites and lead generation for Cork trades">
+<meta property="og:description" content="Websites, ads and booking for trades in Cork. Every enquiry answered in under a minute.">
+<!-- OG IMAGE PLACEHOLDER: upload a 1200 x 630 image and replace og.jpg with its full URL -->
+<meta property="og:image" content="og.jpg">
+<meta property="og:locale" content="en_IE">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%23E4F824'/%3E%3Csvg x='16' y='16' width='68' height='68' viewBox='150 210 950 810' fill='none' stroke='%23000' stroke-width='56'%3E%3Cpath d='M394 478H533L627 617L720 478H860L934 610L866 727H1003L1077 858L998 996H840L762 864V680L627 873L492 680V864L412 996H255L176 858L252 727H385L318 610Z'/%3E%3Cpath d='M533 478L472 364L540 234H708L782 364L720 478'/%3E%3C/svg%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=DM+Serif+Display:ital@1&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('reduce')}else{document.documentElement.classList.add('loading')}</script>
+</head>
+<body>
+
+<!-- Shared symbols and filters -->
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="mark" viewBox="150 210 950 810">
+      <path pathLength="1" d="M394 478H533L627 617L720 478H860L934 610L866 727H1003L1077 858L998 996H840L762 864V680L627 873L492 680V864L412 996H255L176 858L252 727H385L318 610Z"/>
+      <path pathLength="1" d="M533 478L472 364L540 234H708L782 364L720 478"/>
+    </symbol>
+    <filter id="refract" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="16" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- Living background -->
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="bg-static" aria-hidden="true">
+  <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="rib" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#1516F0" stop-opacity=".0"/>
+        <stop offset=".3" stop-color="#1516F0" stop-opacity=".55"/>
+        <stop offset=".55" stop-color="#33E0B0" stop-opacity=".6"/>
+        <stop offset=".8" stop-color="#E4F824" stop-opacity=".7"/>
+        <stop offset="1" stop-color="#E4F824" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" stroke="url(#rib)">
+      <path d="M-100 620C300 420 600 760 900 520S1400 260 1700 380" stroke-width="90"/>
+      <path d="M-100 700C360 520 640 820 960 600S1420 360 1700 460" stroke-width="30" opacity=".7"/>
+      <path d="M-100 540C260 380 620 680 940 470S1380 200 1700 300" stroke-width="18" opacity=".6"/>
+    </g>
+  </svg>
+</div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<!-- Loading sequence -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-plate" id="loaderPlate">
+    <div class="loader-copy" id="loaderCopy">
+      <p class="mono loader-label">what we are for</p>
+      <p class="loader-line" id="loaderLine">The best lead is the one you never had to chase.</p>
+    </div>
+    <p class="mono loader-skip">tap or press any key to skip</p>
+  </div>
+  <div class="loader-tile" id="loaderTile"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></div>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Navigation -->
+<header class="nav glass" id="nav">
+  <a href="#top" class="brand" data-nav-link aria-label="Meridian Labs, back to top">
+    <span class="tile tile-sm" id="navTile" data-stream data-stream-fixed><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+    <span class="brand-name">Meridian Labs</span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#services" data-nav-link>Services</a>
+    <a href="#how" data-nav-link>How it works</a>
+    <a href="#tuesday" data-nav-link>A Tuesday</a>
+    <a href="#pricing" data-nav-link>Pricing</a>
+    <a href="#faq" data-nav-link>FAQ</a>
+  </nav>
+  <div class="nav-right">
+    <!-- PLACEHOLDER: update the number of open spots each month -->
+    <span class="status-pill glass pill"><span class="pulse-dot" aria-hidden="true"></span><span class="mono"><span class="spots">2</span> spots open this month</span></span>
+    <a class="btn btn-lime btn-sm" href="#contact" data-book>Book a call</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuSheet" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="menu-sheet glass lg" id="menuSheet">
+  <nav aria-label="Mobile">
+    <a href="#services" data-nav-link>Services</a>
+    <a href="#how" data-nav-link>How it works</a>
+    <a href="#tuesday" data-nav-link>A Tuesday</a>
+    <a href="#pricing" data-nav-link>Pricing</a>
+    <a href="#faq" data-nav-link>FAQ</a>
+  </nav>
+  <div class="menu-foot">
+    <span class="status-pill glass pill"><span class="pulse-dot" aria-hidden="true"></span><span class="mono"><span class="spots">2</span> spots open this month</span></span>
+    <a class="btn btn-lime" href="#contact" data-book>Book a call</a>
+  </div>
+</div>
+
+<main id="main">
+  <svg class="stream" id="stream" aria-hidden="true" preserveAspectRatio="none">
+    <path class="stream-track" id="streamTrack"/>
+    <path class="stream-glow2" id="streamGlow2"/>
+    <path class="stream-glow" id="streamGlow"/>
+    <path class="stream-core" id="streamCore"/>
+    <circle class="stream-head-halo" id="streamHalo" r="18"/>
+    <circle class="stream-head" id="streamHead" r="4"/>
+  </svg>
+
+  <!-- HERO -->
+  <section class="hero" id="top" data-pose="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="tag glass pill mono reveal">websites / ads / booking for trades in Cork</p>
+        <h1 class="h1 reveal">Your enquiries answer <em>themselves</em>.</h1>
+        <p class="lead reveal">We build your website, run your ads, and set up an assistant that texts every new lead in under a minute, checks they are serious, and books them into your calendar.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-lime" href="#contact" data-book>Book a free call</a>
+          <button class="btn btn-glass glass pill" id="openVideo" type="button">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l5.5-3.5z"/></svg>
+            See how it works, 2 minutes
+          </button>
+        </div>
+        <p class="mono hero-fine reveal">no setup fee for founding clients / you own your ad account / cancel after 3 months</p>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="float">
+          <div class="tilt" id="tilt">
+            <div class="window glass lg refract" id="heroWindow" data-stream>
+              <div class="win-head">
+                <span class="win-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <p class="win-title"><span>Roof repair enquiries</span> <span class="mono">/ 4 steps / 1 branch</span></p>
+                <span class="run-pill mono"><i aria-hidden="true"></i>running</span>
+              </div>
+              <div class="flow" id="flow">
+                <svg class="flow-lines" id="flowLines" aria-hidden="true"></svg>
+                <button type="button" class="node" data-node="n1" style="--x:3%;--y:3%" data-tip="Someone fills in the form on your Facebook ad and their details land here straight away.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v10H8l-4 4z"/></svg></span>
+                  <span class="node-txt"><b>New enquiry</b><small class="mono">facebook ad</small></span>
+                </button>
+                <button type="button" class="node node-cond" data-node="n2" style="--x:3%;--y:38%" data-tip="The assistant checks the job is inside the area you cover before anything else happens.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 9-9 9-9-9z"/></svg></span>
+                  <span class="node-txt"><b>Inside 25 km?</b><small class="mono">condition</small></span>
+                </button>
+                <button type="button" class="node" data-node="n6" style="--x:3%;--y:73%" data-tip="People outside your area get a kind reply and stay on a list for later, so nobody is ignored.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-3-6.2M20 4v5h-5"/></svg></span>
+                  <span class="node-txt"><b>Polite reply and nurture</b><small class="mono">no branch</small></span>
+                </button>
+                <button type="button" class="node" data-node="n3" style="--x:53%;--y:3%" data-tip="A friendly text goes out in your business name in under a minute, day or night.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></span>
+                  <span class="node-txt"><b>Text in 60 seconds</b><small class="mono">sms</small></span>
+                </button>
+                <button type="button" class="node" data-node="n4" style="--x:53%;--y:38%" data-tip="A few quick questions confirm the job, the budget and when they want it done.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+                  <span class="node-txt"><b>Qualified</b><small class="mono">area, budget, timeline</small></span>
+                </button>
+                <button type="button" class="node node-end" data-node="n5" style="--x:53%;--y:73%" data-tip="Serious leads pick a free slot in your calendar and get a reminder the day before.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span>
+                  <span class="node-txt"><b>Booked in calendar</b><small class="mono">thursday 10:00</small></span>
+                </button>
+                <span class="branch mono" id="branchYes">yes</span>
+                <span class="branch mono" id="branchNo">no</span>
+                <div class="flow-tip glass" id="flowTip" role="status" aria-live="polite"></div>
+              </div>
+              <div class="log">
+                <div class="log-head mono"><span>last leads</span><span class="ex-pill">example</span></div>
+                <ul class="mono">
+                  <li><i class="dot"></i><span class="t">08:14</span><span class="who">aoife, douglas, roof repair</span><span class="st lime">booked</span><span class="s">41 s</span></li>
+                  <li><i class="dot"></i><span class="t">07:52</span><span class="who">martin, blackrock, gutter repair</span><span class="st">qualified</span><span class="s">38 s</span></li>
+                  <li><i class="dot dim"></i><span class="t">06:31</span><span class="who">niamh, fermoy, roof repair</span><span class="st">nurture</span><span class="s">29 s</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELIABLE -->
+  <section class="section" id="reliable" data-pose="reliable">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">always on</p>
+        <h2 class="h2">Reliable in the ways that <em>matter</em></h2>
+        <p class="lead">Your leads are answered at 3am, on Christmas Eve, and in the middle of a job. You never have to remember to follow up.</p>
+      </header>
+      <div class="grid-2" data-stagger>
+        <article class="card glass lift reveal" data-stream>
+          <div class="card-head">
+            <h3 class="h3">Every channel, one inbox</h3>
+            <p>Ads, messages, your website and missed calls all land in one place and get the same fast reply.</p>
+          </div>
+          <div class="hub" id="hub">
+            <svg class="hub-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line pathLength="1" x1="20" y1="18" x2="50" y2="50"/>
+              <line pathLength="1" x1="80" y1="18" x2="50" y2="50"/>
+              <line pathLength="1" x1="12" y1="64" x2="50" y2="50"/>
+              <line pathLength="1" x1="88" y1="64" x2="50" y2="50"/>
+              <line pathLength="1" x1="50" y1="90" x2="50" y2="50"/>
+            </svg>
+            <span class="hub-node glass pill mono" style="--x:20%;--y:18%">facebook ads</span>
+            <span class="hub-node glass pill mono" style="--x:80%;--y:18%">instagram</span>
+            <span class="hub-node glass pill mono" style="--x:12%;--y:64%">website form</span>
+            <span class="hub-node glass pill mono" style="--x:88%;--y:64%">google profile</span>
+            <span class="hub-node glass pill mono" style="--x:50%;--y:90%">missed calls</span>
+            <span class="hub-pulse" style="--x:20%;--y:18%;--i:0"></span>
+            <span class="hub-pulse" style="--x:80%;--y:18%;--i:1"></span>
+            <span class="hub-pulse" style="--x:12%;--y:64%;--i:2"></span>
+            <span class="hub-pulse" style="--x:88%;--y:64%;--i:3"></span>
+            <span class="hub-pulse" style="--x:50%;--y:90%;--i:4"></span>
+            <span class="tile hub-tile"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+          </div>
+        </article>
+        <article class="card glass lift reveal">
+          <div class="card-head">
+            <div class="card-title-row"><h3 class="h3">Answered around the clock</h3><span class="ex-pill mono">example data</span></div>
+            <p>Average time to first reply, by time of day. Anything under 60 seconds wins the job more often.</p>
+          </div>
+          <div class="clock-stat">
+            <p class="big"><span data-count="37">37</span><small> s</small></p>
+            <p class="mono">average first reply, any hour of the day or night</p>
+          </div>
+          <ul class="speed" aria-label="Average reply time by time of day, example data">
+            <li><span class="mono">morning</span><span class="bar"><i style="--w:.63"></i></span><span class="mono val"><span data-count="38">38</span> s</span></li>
+            <li><span class="mono">daytime</span><span class="bar"><i style="--w:.73"></i></span><span class="mono val"><span data-count="44">44</span> s</span></li>
+            <li><span class="mono">evening</span><span class="bar"><i style="--w:.6"></i></span><span class="mono val"><span data-count="36">36</span> s</span></li>
+            <li><span class="mono">overnight</span><span class="bar"><i style="--w:.52"></i></span><span class="mono val lime"><span data-count="31">31</span> s</span></li>
+          </ul>
+          <div class="axis mono" aria-hidden="true"><span>0 s</span><span>30 s</span><span>60 s</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- A TUESDAY -->
+  <section class="section" id="tuesday" data-pose="tuesday">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">the dashboard</p>
+        <h2 class="h2">A <em>Tuesday</em>, seen from Meridian</h2>
+        <p class="lead">What a roofer sees at 7:40 on a Tuesday, before the van starts.</p>
+      </header>
+
+      <div class="dash glass lg refract reveal" data-stream>
+        <div class="dash-head">
+          <span class="tile tile-xs"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+          <p class="dash-title">Your week so far</p>
+          <span class="mono dash-time">tue 07:40</span>
+          <span class="ex-pill mono">example data</span>
+        </div>
+        <div class="dash-grid" data-stagger>
+          <div class="panel glass lift reveal p-week">
+            <p class="mono plabel">enquiries this week</p>
+            <p class="big"><span data-count="13">13</span></p>
+            <div class="week" id="week" data-values="9,4,0,0,0,0,0" data-today="1" aria-label="9 enquiries on Monday, 4 so far today"></div>
+          </div>
+          <div class="panel glass lift reveal p-ring">
+            <div class="ring" id="ring" data-value="97">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="50"/><circle class="ring-fg" cx="60" cy="60" r="50" pathLength="100"/></svg>
+              <p class="ring-num"><span data-count="97">97</span><small>%</small></p>
+            </div>
+            <p class="ring-label">of leads texted within 60 seconds</p>
+          </div>
+          <div class="panel glass lift reveal p-wait">
+            <p class="mono plabel">waiting on you</p>
+            <div class="avatars" aria-hidden="true"><span>JK</span><span>MB</span><span class="more">+1</span></div>
+            <p class="wait-num"><b><span data-count="2">2</span> quotes</b> to send</p>
+            <p class="mono small">oldest waiting 1 day</p>
+            <ul class="quote-rows">
+              <li class="row"><span>Velux replacement</span><span class="mono small">john k, ballinlough</span></li>
+              <li class="row"><span>Chimney repair</span><span class="mono small">mary b, bishopstown</span></li>
+            </ul>
+          </div>
+          <div class="panel glass lift reveal p-cpl">
+            <div class="prow"><p class="mono plabel">cost per lead this month</p><p class="mono small lime">down €3.10</p></div>
+            <p class="big">€<span data-count="17.40" data-dec="2">17.40</span></p>
+            <svg class="line-chart" id="cplChart" viewBox="0 0 300 110" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <div class="axis mono" aria-hidden="true"><span>sep 1</span><span>sep 15</span><span>today</span></div>
+          </div>
+          <div class="panel glass lift reveal p-today">
+            <p class="mono plabel">today</p>
+            <ul class="appts">
+              <li class="row"><span class="lime mono">10:00</span><span>Roof survey</span><span class="mono small">douglas</span></li>
+              <li class="row"><span class="lime mono">13:30</span><span>Chimney flashing</span><span class="mono small">rochestown</span></li>
+              <li class="row"><span class="lime mono">16:00</span><span>Reroof quote</span><span class="mono small">glanmire</span></li>
+            </ul>
+          </div>
+          <div class="panel glass lift reveal p-slept">
+            <div class="prow"><p class="mono plabel">while you slept</p><p class="big-inline"><span data-count="3">3</span></p></div>
+            <p class="small-copy">enquiries answered between 22:00 and 07:00</p>
+            <div class="bubbles">
+              <p class="bubble">Thursday at 10 is perfect, see you then.<span class="mono">aoife, 23:48</span></p>
+              <p class="bubble">Booked for Friday 9:00. Thanks for getting back so fast.<span class="mono">tom, 05:12</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLLOW UP -->
+  <section class="section" id="followup" data-pose="followup">
+    <div class="wrap">
+      <div class="split">
+        <header class="sec-head reveal">
+          <p class="eyebrow mono">follow up</p>
+          <h2 class="h2">Most of winning a job is <em>follow up</em></h2>
+          <p class="lead">One lead, every step. Nobody forgets to call back.</p>
+        </header>
+        <div class="timeline glass lg lift reveal" id="timeline">
+          <div class="tl-head"><p class="mono">lead 41982</p><span class="ex-pill mono">example data</span></div>
+          <div class="tl-rows">
+            <div class="tl-row" style="--a:0;--b:.012"><span class="tl-label">enquiry received</span><span class="tl-track"><i></i></span><span class="mono tl-t">0 s</span></div>
+            <div class="tl-row" style="--a:0;--b:.161"><span class="tl-label">text sent</span><span class="tl-track"><i></i></span><span class="mono tl-t">29 s</span></div>
+            <div class="tl-row" style="--a:.161;--b:.522"><span class="tl-label">reply received</span><span class="tl-track"><i></i></span><span class="mono tl-t">94 s</span></div>
+            <div class="tl-row" style="--a:.522;--b:.722"><span class="tl-label">qualified</span><span class="tl-track"><i></i></span><span class="mono tl-t">130 s</span></div>
+            <div class="tl-row is-key" style="--a:.722;--b:.933"><span class="tl-label">booked</span><span class="tl-track"><i></i></span><span class="mono tl-t lime">168 s</span></div>
+          </div>
+          <div class="tl-axis mono" aria-hidden="true"><span>0 s</span><span>60 s</span><span>120 s</span><span>180 s</span></div>
+        </div>
+      </div>
+
+      <div class="split split-rev">
+        <div class="wa glass lg lift reveal" id="wa" data-stream>
+          <div class="wa-head">
+            <span class="tile tile-sm"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+            <div><p class="wa-name">Meridian bookings</p><p class="mono small">on whatsapp</p></div>
+            <span class="mono small wa-time">07:41</span>
+          </div>
+          <div class="wa-body">
+            <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="wa-msg">
+              <p>New booking: Aoife, Douglas, Thursday 10:00, roof survey</p>
+              <span class="mono">07:41</span>
+            </div>
+          </div>
+          <div class="wa-actions">
+            <button type="button" class="btn btn-lime btn-sm" id="waConfirm">Confirm</button>
+            <button type="button" class="btn btn-glass glass pill btn-sm" id="waCall">Call her</button>
+          </div>
+          <p class="mono small wa-note" id="waNote" role="status"></p>
+        </div>
+        <header class="sec-head reveal">
+          <h2 class="h2 h2-sm">Updates where you <em>already</em> are</h2>
+          <p class="lead">You get booked jobs on WhatsApp. No new app to learn.</p>
+        </header>
+      </div>
+
+      <div class="record">
+        <header class="sec-head reveal">
+          <h2 class="h2 h2-sm">Every lead is on the <em>record</em></h2>
+          <p class="lead">Every enquiry, text and booking is saved, so you can see what each week brought in and where it came from.</p>
+        </header>
+        <div class="iso-card glass lg lift reveal">
+          <div class="tl-head"><p class="mono">enquiries per week, last 12 weeks</p><span class="ex-pill mono">example data</span></div>
+          <svg class="iso" id="iso" role="img" aria-label="Enquiries per week rising from 14 to 36 over twelve weeks, example data"></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services" data-pose="services">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">what we do</p>
+        <h2 class="h2">Three services, one <em>system</em>.</h2>
+        <p class="lead">Each one works on its own. Together they turn strangers into booked jobs without you chasing anyone.</p>
+      </header>
+      <div class="svc-grid" data-stagger>
+        <article class="svc glass lift reveal">
+          <svg class="svc-ic" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="38" height="28" rx="4"/><path d="M5 15h38M10 11.5h.01M14 11.5h.01M18 11.5h.01"/><rect x="11" y="20" width="14" height="10" rx="1.5"/><path d="M29 21h9M29 25h9M29 29h6M18 40h12M24 36v4"/></svg>
+          <h3 class="h3">Web design</h3>
+          <p class="svc-intro">A website that makes you look like the best firm in your area and turns visitors into calls.</p>
+          <p class="mono plabel">included</p>
+          <ul class="checks">
+            <li>Mobile first design built around your trade</li>
+            <li>Tap to call and WhatsApp buttons</li>
+            <li>A quote form that goes straight to your email</li>
+            <li>Your real job photos and reviews</li>
+            <li>Your own domain connected</li>
+            <li>Google Analytics, so you can see who visits</li>
+            <li>Google Business Profile set up so you show on Maps</li>
+            <li>Service area pages so you appear when people search your town</li>
+          </ul>
+          <div class="svc-more" id="svcMore1"><div><p>Most people check you out on their phone before they ring. If your site is slow, old, or missing, they ring someone else. We build your site before you pay a cent, from your Facebook page and photos. You look at the live link and only pay if you want it. Sites load fast, work on every phone, and are yours to keep.</p></div></div>
+          <button type="button" class="btn btn-glass glass pill btn-sm more-btn" aria-expanded="false" aria-controls="svcMore1"><span>Read more</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </article>
+        <article class="svc glass lift reveal" data-stream>
+          <svg class="svc-ic" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="3"/><path d="M24 3v6M24 39v6M3 24h6M39 24h6"/></svg>
+          <h3 class="h3">Lead generation</h3>
+          <p class="svc-intro">A steady flow of enquiries from people near you who need your trade.</p>
+          <p class="mono plabel">included</p>
+          <ul class="checks">
+            <li>Ads shown to homeowners within your chosen radius</li>
+            <li>A landing page built for one clear offer</li>
+            <li>Qualifying questions on every form</li>
+            <li>An AI assistant that texts each lead within 60 seconds</li>
+            <li>Area, budget and timeline checked before they reach you</li>
+            <li>Good leads book themselves into your calendar</li>
+            <li>Reminders the day before so people are home</li>
+            <li>Automatic follow up for leads who go quiet</li>
+            <li>Missed call text back</li>
+          </ul>
+          <div class="svc-more" id="svcMore2"><div><p>Word of mouth is brilliant until it goes quiet. This is a second tap you can turn up or down. Speed wins jobs: the business that replies first usually gets the quote, so our assistant replies in under a minute, day or night. Time wasters are filtered out politely, so you only spend time on real jobs.</p></div></div>
+          <button type="button" class="btn btn-glass glass pill btn-sm more-btn" aria-expanded="false" aria-controls="svcMore2"><span>Read more</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </article>
+        <article class="svc glass lift reveal">
+          <svg class="svc-ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20v8a2 2 0 0 0 2 2h5l14 8V10L15 18h-5a2 2 0 0 0-2 2z"/><path d="M15 30l3 10h5l-2.5-9"/><path d="M35 17c2.5 2 2.5 12 0 14M39 13c4.5 4 4.5 18 0 22"/></svg>
+          <h3 class="h3">Running ads</h3>
+          <p class="svc-intro">Facebook and Instagram ads managed properly, with every euro visible to you.</p>
+          <p class="mono plabel">included</p>
+          <ul class="checks">
+            <li>Campaign setup and management</li>
+            <li>3 to 5 new ads a month made from photos and videos you send, no film crew needed</li>
+            <li>Ad copy written for you</li>
+            <li>Weekly checks where weak ads are paused and winners pushed</li>
+            <li>A monthly one page report showing spend, leads, cost per lead and jobs won</li>
+          </ul>
+          <div class="svc-more" id="svcMore3"><div><p>You own your ad account and pay Meta directly on your own card, so there is no markup on ad spend and you see every euro. Ads need 4 to 6 weeks to learn who your best customers are, which is why we work in 3 month blocks. Real phone footage from your jobs, like before and after photos and a 30 second video of you talking about your work, usually beats polished adverts because it looks genuine.</p></div></div>
+          <button type="button" class="btn btn-glass glass pill btn-sm more-btn" aria-expanded="false" aria-controls="svcMore3"><span>Read more</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: pinned lime plate -->
+  <section class="how" id="how" data-pose="how" data-stream data-stream-y=".42" aria-labelledby="howTitle">
+    <div class="how-sticky">
+      <div class="how-plate on-lime" id="howPlate">
+        <div class="how-content" id="howContent">
+          <p class="mono how-label">how it works</p>
+          <h2 class="h2 how-title" id="howTitle">Four steps. <em>Zero</em> chasing.</h2>
+          <ol class="steps" id="steps">
+            <li class="step"><span class="step-num">01</span><p>Ads find homeowners near you.</p></li>
+            <li class="step"><span class="step-num">02</span><p>Every enquiry is texted in a minute.</p></li>
+            <li class="step"><span class="step-num">03</span><p>Good leads book into your calendar.</p></li>
+            <li class="step"><span class="step-num">04</span><p>You turn up, quote and win.</p></li>
+          </ol>
+        </div>
+      </div>
+      <div class="tile how-tile" id="howTile" aria-hidden="true"><svg class="mark"><use href="#mark"/></svg></div>
+    </div>
+  </section>
+
+  <!--
+  ============================================================
+  SAMPLE CONTENT, REPLACE WITH REAL RESULTS BEFORE PUBLISHING
+  The stats and testimonials below are invented for this design
+  preview only. Swap them for real figures and real clients.
+  ============================================================
+  -->
+  <section class="section" id="numbers" data-pose="numbers">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">results</p>
+        <h2 class="h2">Numbers we will <em>not</em> hide</h2>
+      </header>
+      <div class="stats" data-stagger>
+        <article class="stat glass lift reveal">
+          <span class="sample mono">sample</span>
+          <p class="stat-num"><span data-count="1240" data-format="int">1,240</span></p>
+          <p class="mono">enquiries handled for Cork trades</p>
+          <div class="spark" data-values="3,4,4,5,6,5,7,8,7,9,10,12" aria-hidden="true"></div>
+        </article>
+        <article class="stat glass lift reveal" data-stream>
+          <span class="sample mono">sample</span>
+          <p class="stat-num"><span data-count="41">41</span> <small>s</small></p>
+          <p class="mono">average time to first reply</p>
+          <div class="spark" data-values="12,11,10,9,9,8,7,7,6,6,5,5" aria-hidden="true"></div>
+        </article>
+        <article class="stat glass lift reveal">
+          <span class="sample mono">sample</span>
+          <p class="stat-num">€<span data-count="18">18</span></p>
+          <p class="mono">average cost per lead</p>
+          <div class="spark" data-values="11,10,10,9,8,8,7,7,6,6,6,5" aria-hidden="true"></div>
+        </article>
+      </div>
+      <div class="quotes" data-stagger>
+        <figure class="quote glass lift reveal">
+          <span class="sample mono">sample</span>
+          <blockquote><p>We used to lose half our enquiries because I was up a ladder. Now they are booked in before I am back in the van.</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">S</span><span><b>Seán Murphy</b><span class="mono">roofer, ballincollig</span></span></figcaption>
+        </figure>
+        <figure class="quote glass lift reveal">
+          <span class="sample mono">sample</span>
+          <blockquote><p>The site looks better than companies ten times our size, and the quote form actually gets used.</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">C</span><span><b>Clodagh Walsh</b><span class="mono">landscaping, carrigaline</span></span></figcaption>
+        </figure>
+        <figure class="quote glass lift reveal">
+          <span class="sample mono">sample</span>
+          <blockquote><p>I only see the serious ones now. No more driving to Mallow to price a job for someone who was just curious.</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">D</span><span><b>Declan O'Sullivan</b><span class="mono">driveways and paving, midleton</span></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- END SAMPLE CONTENT -->
+
+  <!-- PRICING -->
+  <section class="section" id="pricing" data-pose="pricing">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">pricing</p>
+        <h2 class="h2">Pricing. You pay for <em>results</em>, not hours.</h2>
+        <p class="lead">Clear prices, no surprises. Ad spend goes straight to Meta on your own card.</p>
+      </header>
+
+      <div class="calc glass lg refract reveal">
+        <div class="calc-in">
+          <label class="calc-q" for="spend">What would you spend on ads per day?</label>
+          <p class="calc-val"><span id="spendOut">€25</span> <span class="mono">a day</span></p>
+          <div class="range-wrap" data-stream>
+            <input type="range" id="spend" min="10" max="60" step="1" value="25" aria-describedby="calcNote">
+          </div>
+          <div class="range-scale mono" aria-hidden="true"><span>€10</span><span>€60</span></div>
+          <p class="calc-note" id="calcNote">Below €15 a day Meta cannot learn enough to fill a calendar.</p>
+        </div>
+        <dl class="calc-out" aria-live="polite">
+          <div class="row"><dt class="mono">recommended package</dt><dd id="outPkg">Full Lead System</dd></div>
+          <div class="row"><dt class="mono">meridian fee</dt><dd id="outFee">€900</dd></div>
+          <div class="row"><dt class="mono">monthly ad spend, paid to meta</dt><dd id="outAds">€760</dd></div>
+          <div class="row"><dt class="mono">total per month</dt><dd id="outTotal">€1,660</dd></div>
+          <div class="row row-key"><dt class="mono">first month including setup</dt><dd id="outFirst" class="lime">€1,910</dd></div>
+        </dl>
+      </div>
+
+      <div class="plans-switch">
+        <div class="seg glass pill" role="tablist" aria-label="Plan type">
+          <span class="seg-thumb" aria-hidden="true"></span>
+          <button type="button" role="tab" id="tabWeb" aria-selected="true" aria-controls="plansWeb">Websites</button>
+          <button type="button" role="tab" id="tabLead" aria-selected="false" aria-controls="plansLead" tabindex="-1">Lead generation</button>
+        </div>
+      </div>
+
+      <div class="plans-stack">
+        <div class="plans is-on" id="plansWeb" role="tabpanel" aria-labelledby="tabWeb">
+          <article class="plan glass lift" data-plan="Starter Site">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Starter Site</h3>
+            <p class="price"><span class="amt">€350</span><span class="mono">one off</span></p>
+            <ul class="checks">
+              <li>Single page site</li>
+              <li>Tap to call and WhatsApp buttons</li>
+              <li>Quote form</li>
+              <li>Your photos and reviews</li>
+              <li>Domain connected</li>
+              <li>2 rounds of changes</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Starter Site</button>
+          </article>
+          <article class="plan glass lift" data-plan="Pro Site">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Pro Site</h3>
+            <p class="price"><span class="amt">€750</span><span class="mono">one off</span></p>
+            <ul class="checks">
+              <li>Everything in Starter</li>
+              <li>Up to 5 pages</li>
+              <li>A price estimator or before and after slider</li>
+              <li>Google Business Profile setup</li>
+              <li>Local search pages</li>
+              <li>3 rounds of changes</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Pro Site</button>
+          </article>
+          <article class="plan glass lift" data-plan="Care Plan">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Care Plan</h3>
+            <p class="price"><span class="amt">€50</span><span class="mono">per month</span></p>
+            <ul class="checks">
+              <li>Monthly updates</li>
+              <li>Form and domain checks</li>
+              <li>Priority changes within 48 hours</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Care Plan</button>
+          </article>
+        </div>
+
+        <div class="plans" id="plansLead" role="tabpanel" aria-labelledby="tabLead">
+          <article class="plan glass lift" data-plan="Lead Starter">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Lead Starter</h3>
+            <p class="price"><span class="amt">€400</span><span class="mono">per month, plus ad spend</span></p>
+            <ul class="checks">
+              <li>Ads managed</li>
+              <li>Forms with qualifying questions</li>
+              <li>Leads sent to your phone and email</li>
+              <li>Monthly report</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Lead Starter</button>
+          </article>
+          <article class="plan plan-hot glass lift" data-plan="Full Lead System">
+            <span class="hot-pill mono">most picked</span>
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Full Lead System</h3>
+            <p class="price"><span class="amt">€900</span><span class="mono">per month, plus €250 setup and ad spend</span></p>
+            <ul class="checks">
+              <li>Everything in Lead Starter</li>
+              <li>Landing page</li>
+              <li>AI text assistant</li>
+              <li>Calendar booking and reminders</li>
+              <li>Automatic follow up</li>
+              <li>Missed call text back</li>
+              <li>Live dashboard</li>
+              <li>Monthly results call</li>
+              <li>One client per trade per area</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Full Lead System</button>
+          </article>
+          <article class="plan glass lift" data-plan="Launch Bundle">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Launch Bundle</h3>
+            <p class="price"><span class="amt">€1,650</span><span class="mono">plus ad spend</span></p>
+            <ul class="checks">
+              <li>Pro Site</li>
+              <li>3 months of Lead Starter</li>
+              <li>One price, one start date</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Launch Bundle</button>
+          </article>
+        </div>
+      </div>
+      <p class="mono plans-fine">lead generation plans are monthly with a 3 month minimum. ad spend is paid to meta directly.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" data-pose="faq">
+    <div class="wrap wrap-narrow">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">faq</p>
+        <h2 class="h2">Straight <em>answers</em></h2>
+      </header>
+      <div class="faq glass lg reveal" id="faqList">
+        <div class="qa">
+          <h3><button type="button" id="q1" aria-expanded="false" aria-controls="a1">Do I need to be on social media myself?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a1" role="region" aria-labelledby="q1"><div><p>No. We run the ads from your business page. You just send us photos and short videos from your jobs, and we do the rest.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q2" aria-expanded="false" aria-controls="a2">Who owns the website and ad account?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a2" role="region" aria-labelledby="q2"><div><p>You do. The website, the domain and the ad account are all in your name. If you ever leave, everything stays with you.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q3" aria-expanded="false" aria-controls="a3">How quickly will I get leads?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a3" role="region" aria-labelledby="q3"><div><p>Ads usually start bringing enquiries in the first week. Results sharpen over 4 to 6 weeks as Meta learns who your best customers are.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q4" aria-expanded="false" aria-controls="a4">What if the leads are rubbish?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a4" role="region" aria-labelledby="q4"><div><p>Every lead is checked for area, budget and timeline before it reaches you, and we tighten the filters every week based on what you tell us.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q5" aria-expanded="false" aria-controls="a5">Why a 3 month minimum?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a5" role="region" aria-labelledby="q5"><div><p>Ads need time to learn. The first 4 to 6 weeks are when Meta works out who actually books, so 3 months gives you a fair test and real numbers to judge us on.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q6" aria-expanded="false" aria-controls="a6">Do you film content?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a6" role="region" aria-labelledby="q6"><div><p>No. You send phone photos and videos using our simple shot list. Real footage from your jobs usually beats polished adverts because it looks genuine.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q7" aria-expanded="false" aria-controls="a7">What does it cost to keep a website running?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a7" role="region" aria-labelledby="q7"><div><p>Hosting is free. A domain is about €15 to €20 a year. The optional Care Plan is €50 a month if you want us to look after updates for you.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CALL TO ACTION -->
+  <section class="section section-cta" id="contact" data-pose="contact">
+    <div class="wrap">
+      <div class="cta-grid" data-stagger>
+        <div class="cta-dark glass lg lift reveal">
+          <span class="tile tile-lg"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+          <p class="cta-dark-line">Websites, ads and booking for trades in Cork.</p>
+          <p class="mono">meridian labs / cork, ireland</p>
+        </div>
+        <div class="cta-lime on-lime reveal">
+          <h2 class="h2 dark">Pick the job you want <em>more</em> of.</h2>
+          <p>Tell us your trade and town. We will send a free preview of your site or a plan for your area within a day.</p>
+          <form class="quick" id="quickForm" action="https://formspree.io/f/xlgvegzy" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Callback request from the Meridian Labs site">
+            <input type="hidden" name="form" value="quick callback">
+            <label class="sr-only" for="qPhone">Your phone number</label>
+            <input id="qPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Your phone number" required>
+            <button type="submit" class="btn btn-black" id="quickSend" data-stream data-stream-end>Send</button>
+          </form>
+          <p class="quick-msg" id="quickMsg" role="status" aria-live="polite"></p>
+          <p class="quick-fine">We only use your number to reply to this enquiry.</p>
+        </div>
+      </div>
+
+      <form class="contact glass lg reveal" id="contactForm" action="https://formspree.io/f/xlgvegzy" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New enquiry from the Meridian Labs site">
+        <div class="contact-head">
+          <h2 class="h3">Or tell us a bit <em>more</em></h2>
+          <p class="mono">replies within one working day</p>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <label for="fName">Name</label>
+            <input id="fName" name="name" type="text" autocomplete="name" required>
+            <p class="err mono" id="fNameErr"></p>
+          </div>
+          <div class="field">
+            <label for="fPhone">Phone</label>
+            <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <p class="err mono" id="fPhoneErr"></p>
+          </div>
+          <div class="field">
+            <label for="fTrade">Business or trade</label>
+            <input id="fTrade" name="trade" type="text" autocomplete="organization" required>
+            <p class="err mono" id="fTradeErr"></p>
+          </div>
+          <div class="field">
+            <label for="fTown">Town</label>
+            <input id="fTown" name="town" type="text" autocomplete="address-level2" required>
+            <p class="err mono" id="fTownErr"></p>
+          </div>
+          <div class="field field-wide">
+            <label for="fInterest">Interested in</label>
+            <div class="select-wrap">
+              <select id="fInterest" name="interested_in">
+                <option value="Not sure yet">Not sure yet</option>
+                <option value="Starter Site">Starter Site, €350</option>
+                <option value="Pro Site">Pro Site, €750</option>
+                <option value="Care Plan">Care Plan, €50 a month</option>
+                <option value="Lead Starter">Lead Starter, €400 a month</option>
+                <option value="Full Lead System">Full Lead System, €900 a month</option>
+                <option value="Launch Bundle">Launch Bundle, €1,650</option>
+              </select>
+            </div>
+          </div>
+          <div class="field field-wide">
+            <label for="fMsg">Message</label>
+            <textarea id="fMsg" name="message" rows="4" placeholder="What kind of jobs do you want more of?"></textarea>
+          </div>
+          <div class="field field-wide check-field">
+            <input id="fConsent" name="consent" type="checkbox" value="yes" required>
+            <label for="fConsent">I am happy for Meridian Labs to contact me by phone, text or WhatsApp about this enquiry.</label>
+            <p class="err mono" id="fConsentErr"></p>
+          </div>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn btn-lime submit-btn" id="submitBtn">
+            <span class="submit-label">Send enquiry</span>
+            <svg class="submit-check" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+          </button>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot glass lg">
+      <div class="foot-brand">
+        <a href="#top" class="brand" aria-label="Meridian Labs, back to top"><span class="tile tile-sm"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span><span class="brand-name">Meridian Labs</span></a>
+        <p>Meridian Labs, Cork, Ireland</p>
+        <!-- PLACEHOLDERS: replace [NUMBER] with your WhatsApp number in international format, and [EMAIL] with your email -->
+        <p class="foot-contact"><a href="https://wa.me/[NUMBER]">WhatsApp us</a><a href="mailto:[EMAIL]">[EMAIL]</a></p>
+      </div>
+      <nav class="foot-col" aria-label="Services">
+        <p class="mono">services</p>
+        <a href="#services">Web design</a>
+        <a href="#services">Lead generation</a>
+        <a href="#services">Running ads</a>
+      </nav>
+      <nav class="foot-col" aria-label="Company">
+        <p class="mono">company</p>
+        <a href="#reliable">About</a>
+        <a href="#numbers">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <nav class="foot-col" aria-label="Legal">
+        <p class="mono">legal</p>
+        <a href="#privacy">Privacy</a>
+        <a href="#cookies">Cookies</a>
+      </nav>
+      <p class="mono foot-copy">© 2026 Meridian Labs</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Video modal -->
+<dialog class="modal glass lg" id="videoModal" aria-labelledby="videoTitle">
+  <div class="modal-in">
+    <div class="modal-head">
+      <h2 class="h4" id="videoTitle">How Meridian works, in 2 minutes</h2>
+      <button type="button" class="icon-btn glass pill" data-close aria-label="Close video">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <!-- VIDEO PLACEHOLDER: replace this block with your embed, for example an iframe pointing at [VIDEO LINK] -->
+    <div class="video-ph">
+      <svg class="ic play-big" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l5.5-3.5z"/></svg>
+      <p class="mono">[VIDEO LINK]</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>

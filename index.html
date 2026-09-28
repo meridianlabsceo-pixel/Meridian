@@ -1,0 +1,2885 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meridian Labs | Websites and lead generation for Cork trades</title>
+<meta name="description" content="Meridian Labs builds websites for trades in Cork, runs your Facebook and Instagram ads, and sets up an assistant that texts every new enquiry within 60 seconds and books good jobs into your calendar.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meridian Labs">
+<meta property="og:title" content="Meridian Labs | Websites and lead generation for Cork trades">
+<meta property="og:description" content="Websites, ads and booking for trades in Cork. Every enquiry answered in under a minute.">
+<!-- OG IMAGE PLACEHOLDER: upload a 1200 x 630 image and replace og.jpg with its full URL -->
+<meta property="og:image" content="og.jpg">
+<meta property="og:locale" content="en_IE">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%23E4F824'/%3E%3Csvg x='16' y='16' width='68' height='68' viewBox='150 210 950 810' fill='none' stroke='%23000' stroke-width='56'%3E%3Cpath d='M394 478H533L627 617L720 478H860L934 610L866 727H1003L1077 858L998 996H840L762 864V680L627 873L492 680V864L412 996H255L176 858L252 727H385L318 610Z'/%3E%3Cpath d='M533 478L472 364L540 234H708L782 364L720 478'/%3E%3C/svg%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=DM+Serif+Display:ital@1&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Meridian Labs
+   Dark, calm, precise. Liquid glass over living light. */
+
+@property --mx { syntax: '<percentage>'; inherits: true; initial-value: 30%; }
+@property --my { syntax: '<percentage>'; inherits: true; initial-value: 0%; }
+
+:root {
+  --black: #000000;
+  --lime: #E4F824;
+  --gray: #EBEBE8;
+  --white: #FFFFFF;
+  --silver: #797979;
+  --silver-g: #9A9A96;
+  --blue: #1516F0;
+  --teal: #33E0B0;
+
+  --f-sans: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-serif: 'DM Serif Display', Georgia, serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --lock: cubic-bezier(.16, 1.08, .3, 1);
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+  --out: cubic-bezier(.22, 1, .36, 1);
+
+  --r-win: 28px;
+  --r-card: 22px;
+  --r-row: 12px;
+
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
+  --dots: radial-gradient(rgba(0,0,0,.06) 1.2px, transparent 1.4px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background: var(--black);
+  color: var(--gray);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: 96px;
+}
+html.loading { overflow: hidden; }
+
+body {
+  margin: 0;
+  background: var(--black);
+  font: 400 17px/1.6 var(--f-sans);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg { display: block; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, h4 { margin: 0; font-weight: 600; color: var(--white); }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+dl, dd { margin: 0; }
+figure, blockquote { margin: 0; }
+
+.defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+.skip-link {
+  position: fixed; left: 16px; top: -80px; z-index: 200;
+  background: var(--lime); color: #000; padding: 12px 18px; border-radius: 999px;
+  font-weight: 600; text-decoration: none; transition: top .2s;
+}
+.skip-link:focus { top: 16px; }
+
+:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; border-radius: 8px; }
+.on-lime :focus-visible { outline-color: #000; }
+
+::selection { background: var(--lime); color: #000; }
+
+/* ---------- Type ---------- */
+
+.h1, .h2, .h3, .h4 { letter-spacing: -0.01em; font-weight: 600; }
+.h1 { font-size: clamp(44px, 6.4vw, 88px); line-height: 1.02; }
+.h2 { font-size: clamp(36px, 4.8vw, 64px); line-height: 1.06; }
+.h2-sm { font-size: clamp(32px, 3.6vw, 48px); }
+.h3 { font-size: clamp(22px, 2vw, 26px); line-height: 1.2; }
+.h4 { font-size: 20px; line-height: 1.25; }
+.h1 em, .h2 em, .h3 em, .h4 em {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--white);
+}
+.dark, .dark em { color: #000; }
+
+.lead { font-size: 17px; line-height: 1.6; max-width: 60ch; color: var(--gray); }
+
+.mono {
+  font-family: var(--f-mono);
+  font-size: 12.5px;
+  line-height: 1.5;
+  text-transform: lowercase;
+  color: var(--silver);
+  letter-spacing: 0;
+}
+.glass .mono { color: var(--silver-g); }
+.small { font-size: 12px; }
+.lime, .glass .lime { color: var(--lime); }
+.eyebrow { margin-bottom: 18px; color: var(--silver-g); }
+.eyebrow::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--lime); margin-right: 10px; vertical-align: 1px; }
+
+.ic { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+/* ---------- Layout ---------- */
+
+.wrap { width: min(1200px, 100% - 32px); margin-inline: auto; }
+.wrap-narrow { width: min(860px, 100% - 32px); }
+@media (min-width: 720px) {
+  .wrap { width: min(1200px, 100% - 64px); }
+  .wrap-narrow { width: min(860px, 100% - 64px); }
+}
+
+main { position: relative; z-index: 2; display: block; overflow-x: clip; }
+main > section { position: relative; z-index: 1; }
+.section { padding: clamp(96px, 13vw, 160px) 0; scroll-margin-top: 88px; }
+
+.sec-head { position: relative; margin-bottom: clamp(40px, 5vw, 64px); max-width: 760px; }
+.sec-head .lead { margin-top: 20px; }
+.sec-head::before {
+  /* soft dark scrim so the ribbons never fight the headline */
+  content: ""; position: absolute; inset: -60px -80px; z-index: -1; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(0,0,0,.72), rgba(0,0,0,.35) 60%, transparent);
+}
+
+.grid-2 { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .grid-2 { grid-template-columns: 1fr 1fr; gap: 24px; } }
+
+.split { display: grid; gap: 40px; align-items: center; grid-template-columns: minmax(0, 1fr); margin-bottom: clamp(80px, 10vw, 140px); }
+.split .sec-head { margin-bottom: 0; }
+@media (min-width: 960px) {
+  .split { grid-template-columns: .85fr 1.15fr; gap: 64px; }
+  .split-rev { grid-template-columns: 1fr .9fr; }
+}
+@media (max-width: 959px) {
+  .split-rev > .sec-head { order: -1; }
+}
+
+/* ---------- Background ---------- */
+
+#bg { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; display: block; }
+.bg-static { position: fixed; inset: 0; transform: scale(1.15); z-index: 0; display: none; filter: blur(38px) saturate(120%); opacity: .75; }
+.bg-static svg { width: 100%; height: 100%; }
+.no-webgl #bg { display: none; }
+.no-webgl .bg-static { display: block; }
+.bg-vignette {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(120% 90% at 50% 45%, transparent 45%, rgba(0,0,0,.6) 100%);
+}
+
+/* The single stream of light that runs down the page */
+.stream { position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; overflow: visible; }
+.stream path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.stream-track { stroke: rgba(255,255,255,.05); stroke-width: 1; }
+.stream-glow2 { stroke: rgba(228,248,36,.05); stroke-width: 18; }
+.stream-glow { stroke: rgba(228,248,36,.16); stroke-width: 6; }
+.stream-core { stroke: var(--lime); stroke-width: 1.5; }
+.stream-head { fill: #fff; opacity: .95; }
+.stream-head-halo { fill: rgba(228,248,36,.18); }
+
+/* ---------- Liquid glass ---------- */
+
+.glass {
+  position: relative;
+  background-color: rgba(255,255,255,.05);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  border-radius: var(--r-card);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    inset 0 -1px 0 rgba(0,0,0,.4),
+    inset 0 -22px 34px -30px rgba(0,0,0,.9),
+    0 30px 70px -34px rgba(0,0,0,.9);
+}
+.glass::before {
+  /* the bezel: bright at top left, fading out at bottom right */
+  content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; pointer-events: none;
+  background: linear-gradient(135deg, rgba(255,255,255,.22) 0%, rgba(255,255,255,.1) 22%, rgba(255,255,255,.035) 55%, rgba(255,255,255,.01) 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: .85;
+  transition: opacity .4s ease;
+}
+.glass::after {
+  /* specular sheen that follows the pointer, plus faint film grain */
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background:
+    radial-gradient(520px circle at var(--mx) var(--my), rgba(255,255,255,var(--sheen, .045)), transparent 55%),
+    var(--noise);
+}
+.glass.is-lit { --sheen: .09; }
+@media (hover: none) {
+  .glass::after { animation: drift 16s ease-in-out infinite alternate; }
+}
+@keyframes drift {
+  0% { --mx: 12%; --my: 0%; }
+  50% { --mx: 70%; --my: 25%; }
+  100% { --mx: 92%; --my: 8%; }
+}
+
+.glass.lg { border-radius: var(--r-win); }
+.glass.pill { border-radius: 999px; }
+.row { border-radius: var(--r-row); }
+
+.glass, .reveal {
+  transition:
+    opacity .9s var(--lock) var(--d, 0ms),
+    filter .9s var(--lock) var(--d, 0ms),
+    transform .9s var(--lock) var(--d, 0ms),
+    translate .4s var(--spring),
+    box-shadow .4s ease,
+    background-color .4s ease;
+}
+@media (hover: hover) {
+  .glass.lift:hover {
+    translate: 0 -2px;
+    box-shadow:
+      inset 0 1px 0 rgba(228,248,36,.38),
+      inset 0 -1px 0 rgba(0,0,0,.4),
+      inset 0 -22px 34px -30px rgba(0,0,0,.9),
+      0 36px 80px -34px rgba(0,0,0,.95);
+  }
+  .glass.lift:hover::before { opacity: 1; }
+}
+
+/* Refraction at the bezel only (Chromium). Injected by script. */
+.glass.has-layers { -webkit-backdrop-filter: none; backdrop-filter: none; z-index: 0; }
+.g-bg, .g-edge { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: -1; }
+.g-bg { -webkit-backdrop-filter: blur(24px) saturate(180%); backdrop-filter: blur(24px) saturate(180%); }
+.g-edge {
+  padding: 12px;
+  backdrop-filter: blur(6px) saturate(190%) url(#refract);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* ---------- Tiles and logo ---------- */
+
+.mark { fill: none; stroke: currentColor; stroke-width: 22; stroke-linejoin: miter; overflow: visible; }
+.tile {
+  display: grid; place-items: center; flex: none;
+  aspect-ratio: 1; border-radius: 28%;
+  background: var(--lime); color: #000;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 8px 24px -10px rgba(228,248,36,.5);
+}
+.tile .mark { width: 68%; height: auto; aspect-ratio: 950 / 810; stroke-width: 52; }
+.tile-xs { width: 28px; }
+.tile-sm { width: 38px; }
+.tile-lg { width: 72px; }
+.tile-lg .mark { stroke-width: 40; }
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 50px; padding: 0 24px; border: 0; border-radius: 999px;
+  font: 600 15px/1.1 var(--f-sans); letter-spacing: 0; text-decoration: none; cursor: pointer;
+  white-space: nowrap;
+  transition: translate .4s var(--spring), box-shadow .4s ease, background-color .3s ease, color .3s ease;
+}
+.btn-sm { min-height: 44px; padding: 0 18px; font-size: 14px; }
+.btn-lime { background: var(--lime); color: #000; box-shadow: 0 10px 34px -12px rgba(228,248,36,.55), inset 0 1px 0 rgba(255,255,255,.55); }
+.btn-lime:hover { translate: 0 -1px; box-shadow: 0 16px 44px -12px rgba(228,248,36,.75), inset 0 1px 0 rgba(255,255,255,.6); }
+.btn-glass { color: var(--white); background-color: rgba(255,255,255,.06); }
+.btn-glass:hover { background-color: rgba(255,255,255,.1); }
+.btn-black { background: #000; color: var(--lime); }
+.btn-black:hover { translate: 0 -1px; background: #111; }
+.btn:active { translate: 0 1px; }
+
+/* ---------- Loader ---------- */
+
+.loader { display: none; }
+.js.loading .loader { display: block; position: fixed; inset: 0; z-index: 120; }
+.loader-plate {
+  position: absolute; inset: 0;
+  background-color: var(--lime);
+  background-image: var(--dots);
+  background-size: 18px 18px;
+  clip-path: inset(0px 0px 0px 0px round 0px);
+}
+.loader-copy {
+  position: absolute; left: 50%; top: calc(50% + 78px); translate: -50% 0;
+  width: min(760px, 100% - 40px); text-align: center; color: #000;
+}
+.loader-label { color: rgba(0,0,0,.62); margin-bottom: 12px; }
+.loader-line { font: 600 clamp(24px, 3.4vw, 40px)/1.15 var(--f-sans); letter-spacing: -0.01em; }
+.loader-line .w { display: inline-block; filter: blur(8px); opacity: .25; transition: filter .45s var(--out), opacity .45s var(--out); }
+.loader-line .w.on { filter: none; opacity: 1; }
+.loader-skip { position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; color: rgba(0,0,0,.55); }
+.loader-tile {
+  position: fixed; left: 50%; top: 50%; width: 96px; height: 96px; margin: -96px 0 0 -48px;
+  display: grid; place-items: center; border-radius: 28%;
+  background: #000; color: var(--lime);
+  transition: background-color .45s ease, color .45s ease;
+  transform-origin: 50% 50%;
+}
+.loader-tile .mark { width: 66%; height: auto; aspect-ratio: 950/810; stroke-width: 40; }
+.loader-tile .mark { stroke-dasharray: 1 1; stroke-dashoffset: 1; animation: draw .9s var(--out) .1s forwards; }
+.loader-tile.to-lime { background: var(--lime); color: #000; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.js.loading #navTile { opacity: 0; }
+
+/* ---------- Navigation ---------- */
+
+.nav {
+  position: fixed; top: 12px; left: 50%; translate: -50% 0; z-index: 60;
+  width: min(1240px, 100% - 24px); min-height: 64px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 8px 8px 8px 12px; border-radius: 20px;
+  background-color: rgba(10,10,10,.45);
+}
+.nav:hover { translate: -50% 0; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; min-height: 44px; border-radius: 12px; }
+.brand-name { font-weight: 600; color: var(--white); font-size: 16px; letter-spacing: -0.01em; white-space: nowrap; }
+.nav-links { display: flex; gap: 2px; }
+.nav-links a {
+  position: relative; display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px;
+  color: var(--silver-g); text-decoration: none; font-size: 14.5px; font-weight: 500; border-radius: 12px;
+  transition: color .3s ease;
+}
+.nav-links a:hover { color: var(--white); }
+.nav-links a::after {
+  content: ""; position: absolute; left: 50%; bottom: 4px; width: 4px; height: 4px; margin-left: -2px;
+  border-radius: 50%; background: var(--lime); opacity: 0; transform: scale(0);
+  transition: opacity .3s ease, transform .4s var(--spring);
+}
+.nav-links a.is-active { color: var(--white); }
+.nav-links a.is-active::after { opacity: 1; transform: scale(1); }
+.nav-right { display: flex; align-items: center; gap: 10px; }
+
+.status-pill { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px; }
+.status-pill .mono { color: var(--gray); white-space: nowrap; }
+.pulse-dot { position: relative; width: 8px; height: 8px; border-radius: 50%; background: var(--lime); flex: none; }
+.pulse-dot::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid var(--lime); animation: pulse 2.2s var(--out) infinite; }
+@keyframes pulse { 0% { transform: scale(.5); opacity: .9; } 100% { transform: scale(2.2); opacity: 0; } }
+
+.menu-btn { display: none; width: 48px; height: 48px; border: 0; border-radius: 14px; background: rgba(255,255,255,.06); cursor: pointer; position: relative; }
+.menu-btn span { position: absolute; left: 15px; right: 15px; height: 1.5px; background: var(--white); border-radius: 2px; transition: transform .4s var(--spring), top .4s var(--spring); }
+.menu-btn span:first-child { top: 19px; }
+.menu-btn span:last-child { top: 27px; }
+.menu-btn[aria-expanded="true"] span:first-child { top: 23px; transform: rotate(45deg); }
+.menu-btn[aria-expanded="true"] span:last-child { top: 23px; transform: rotate(-45deg); }
+
+.menu-sheet {
+  position: fixed; top: 86px; left: 12px; right: 12px; z-index: 59;
+  padding: 12px; display: none;
+  background-color: rgba(8,8,8,.86);
+  opacity: 0; transform: translateY(-16px) scale(.98); visibility: hidden;
+  transition: opacity .35s var(--out), transform .5s var(--lock), visibility 0s linear .5s;
+}
+.menu-sheet.open { opacity: 1; transform: none; visibility: visible; transition: opacity .35s var(--out), transform .5s var(--lock), visibility 0s; }
+.menu-sheet nav { display: grid; }
+.menu-sheet nav a { display: flex; align-items: center; min-height: 54px; padding: 0 12px; font-size: 20px; font-weight: 600; color: var(--white); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.08); }
+.menu-sheet nav a.is-active::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--lime); margin-right: 12px; }
+.menu-foot { display: flex; flex-wrap: wrap; gap: 10px; padding: 14px 4px 4px; justify-content: space-between; }
+
+@media (max-width: 1180px) { .nav .status-pill { display: none; } }
+@media (max-width: 920px) {
+  .nav-links { display: none; }
+  .menu-btn { display: block; }
+  .menu-sheet { display: block; }
+}
+@media (max-width: 420px) {
+  .nav .btn-sm { padding: 0 14px; }
+  .brand-name { font-size: 15px; }
+}
+@media (max-width: 360px) { .brand-name { display: none; } }
+
+/* ---------- Motion: reveal ---------- */
+
+.js .reveal { opacity: 0; filter: blur(14px); transform: translateY(20px) scale(.98); }
+.js .reveal.in { opacity: 1; filter: none; transform: none; }
+.js .reveal em { display: inline-block; opacity: 0; filter: blur(6px); transition: opacity .8s var(--lock), filter .8s var(--lock); transition-delay: calc(var(--d, 0ms) + 380ms); }
+.js .reveal.in em { opacity: 1; filter: none; }
+.reduce .reveal, .reduce .reveal em { opacity: 1 !important; filter: none !important; transform: none !important; transition: none !important; }
+
+/* ---------- Hero ---------- */
+
+.hero { padding: 132px 0 80px; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; scroll-margin-top: 0; }
+.hero-grid { display: grid; gap: 56px; align-items: center; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 1000px) { .hero-grid { grid-template-columns: 1.02fr 1fr; gap: 40px; } }
+.hero-copy { position: relative; }
+.hero-copy::before { content: ""; position: absolute; inset: -80px -100px; z-index: -1; pointer-events: none; background: radial-gradient(closest-side, rgba(0,0,0,.7), rgba(0,0,0,.3) 65%, transparent); }
+.tag { display: inline-flex; align-items: center; min-height: 36px; padding: 0 16px; margin-bottom: 28px; color: var(--gray) !important; }
+.hero .h1 { max-width: 14ch; }
+.hero .lead { margin-top: 26px; max-width: 54ch; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.hero-fine { margin-top: 26px; max-width: 60ch; }
+
+.hero-visual { position: relative; }
+.float { animation: float 8s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.tilt {
+  --rx: 5deg; --ry: -9deg;
+  transform: perspective(1400px) rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform .9s var(--out);
+}
+@media (max-width: 999px) { .tilt { --rx: 0deg; --ry: 0deg; } }
+.reduce .float { animation: none; }
+
+.window { padding: 16px; }
+.win-head { display: flex; align-items: center; gap: 12px; padding: 4px 4px 14px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.win-dots { display: flex; gap: 6px; }
+.win-dots i { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.14); }
+.win-title { flex: 1; min-width: 0; font-size: 14px; font-weight: 600; color: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.win-title .mono { font-weight: 400; }
+.run-pill { display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px; border-radius: 999px; background: rgba(228,248,36,.12); color: var(--lime) !important; }
+.run-pill i { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 10px var(--lime); }
+
+.flow { position: relative; margin: 14px 0 12px; aspect-ratio: 520 / 300; }
+.flow-lines { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.flow-lines .e-base { fill: none; stroke: rgba(255,255,255,.16); stroke-width: 1.2; stroke-dasharray: 3 4; }
+.flow-lines .e-lit { fill: none; stroke: var(--lime); stroke-width: 1.6; }
+.flow-lines .p-halo { fill: rgba(228,248,36,.22); }
+.flow-lines .p-core { fill: var(--lime); }
+.node {
+  position: absolute; left: var(--x); top: var(--y); width: 44%;
+  display: flex; align-items: center; gap: 10px; text-align: left;
+  min-height: 56px; padding: 8px 10px; border-radius: var(--r-row);
+  background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+  cursor: pointer;
+  transition: border-color .4s ease, background-color .4s ease, box-shadow .4s ease;
+}
+.node:hover { background: rgba(255,255,255,.085); }
+.node-ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; background: rgba(255,255,255,.06); flex: none; transition: background-color .4s ease, color .4s ease; color: var(--gray); }
+.node-ic svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.node-txt { display: grid; min-width: 0; }
+.node-txt b { font-size: 13px; font-weight: 600; color: var(--white); line-height: 1.25; }
+.node-txt small { font-size: 11px; line-height: 1.4; }
+.node.is-active { border-color: rgba(228,248,36,.6); box-shadow: 0 0 0 3px rgba(228,248,36,.1), inset 0 1px 0 rgba(255,255,255,.1); }
+.node.is-done .node-ic, .node.is-active .node-ic { background: var(--lime); color: #000; }
+.node-cond .node-ic svg { stroke-width: 1.5; }
+.branch { position: absolute; transform: translate(-50%, -50%); padding: 1px 7px; border-radius: 999px; background: #0c0c0c; border: 1px solid rgba(255,255,255,.12); font-size: 10.5px; pointer-events: none; }
+.flow-tip {
+  position: absolute; z-index: 5; max-width: 250px; padding: 12px 14px; font-size: 13.5px; line-height: 1.45; color: var(--gray);
+  background-color: rgba(18,18,18,.78); border-radius: var(--r-row);
+  opacity: 0; transform: translateY(6px); pointer-events: none;
+  transition: opacity .3s var(--out), transform .4s var(--lock);
+}
+.flow-tip.show { opacity: 1; transform: none; }
+
+.log { border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px; }
+.log-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.log li { display: grid; grid-template-columns: 10px 44px 1fr auto 36px; gap: 10px; align-items: center; padding: 6px 2px; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 11.5px; }
+.log li:last-child { border-bottom: 0; }
+.log .who { color: var(--gray); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.log .s { text-align: right; }
+.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 8px rgba(228,248,36,.8); }
+.dot.dim { background: var(--silver-g); box-shadow: none; }
+
+.ex-pill { display: inline-flex; align-items: center; padding: 2px 9px; border-radius: 999px; border: 1px solid rgba(255,255,255,.14); font-size: 11px; white-space: nowrap; }
+
+@media (max-width: 560px) {
+  .flow { aspect-ratio: 1 / .92; }
+  .node { gap: 8px; padding: 8px; min-height: 52px; }
+  .node-ic { width: 26px; height: 26px; }
+  .node-txt b { font-size: 12px; }
+  .node-txt small { font-size: 10px; }
+  .log li { grid-template-columns: 8px 38px 1fr auto; font-size: 11px; gap: 8px; }
+  .log .s { display: none; }
+  .win-title .mono { display: none; }
+}
+
+/* ---------- Modal ---------- */
+
+.modal {
+  position: fixed; inset: 0; margin: auto; height: fit-content; max-height: calc(100% - 32px);
+  width: min(880px, 100% - 32px); max-width: none; padding: 0; border: 0; color: var(--gray);
+  background-color: rgba(16,16,16,.7);
+  opacity: 0; transform: translateY(14px) scale(.98); filter: blur(10px);
+}
+.modal[open] { animation: modalIn .6s var(--lock) forwards; }
+@keyframes modalIn { to { opacity: 1; transform: none; filter: none; } }
+.modal::backdrop { background: rgba(0,0,0,.62); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.modal-in { padding: 18px; }
+.modal-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.icon-btn { display: grid; place-items: center; width: 44px; height: 44px; border: 0; cursor: pointer; color: var(--white); }
+.video-ph { aspect-ratio: 16 / 9; border-radius: 18px; display: grid; place-content: center; justify-items: center; gap: 14px; background: radial-gradient(circle at 50% 40%, rgba(228,248,36,.1), rgba(255,255,255,.02) 60%); border: 1px solid rgba(255,255,255,.08); }
+.play-big { width: 64px; height: 64px; color: var(--lime); stroke-width: 1.2; }
+
+/* ---------- Cards ---------- */
+
+.card { padding: clamp(22px, 3vw, 32px); display: flex; flex-direction: column; gap: 24px; }
+.card-head p { margin-top: 10px; color: var(--gray); max-width: 52ch; font-size: 16px; }
+.card-title-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+/* hub */
+.hub { position: relative; aspect-ratio: 4 / 3; margin-top: auto; }
+.hub-lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hub-lines line { stroke: rgba(228,248,36,.45); stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 1 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.2s var(--out); }
+.hub-lines line:nth-child(2) { transition-delay: .1s; }
+.hub-lines line:nth-child(3) { transition-delay: .2s; }
+.hub-lines line:nth-child(4) { transition-delay: .3s; }
+.hub-lines line:nth-child(5) { transition-delay: .4s; }
+.in .hub-lines line, .reduce .hub-lines line { stroke-dashoffset: 0; }
+.hub-node { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); padding: 7px 12px; color: var(--gray) !important; white-space: nowrap; font-size: 11.5px; background-color: rgba(20,20,20,.55); }
+.hub-tile { position: absolute; left: 50%; top: 50%; width: 64px; transform: translate(-50%, -50%); box-shadow: 0 0 0 10px rgba(228,248,36,.06), 0 0 60px rgba(228,248,36,.35); }
+.hub-pulse { position: absolute; left: var(--x); top: var(--y); width: 7px; height: 7px; margin: -3.5px 0 0 -3.5px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 12px var(--lime); opacity: 0; }
+.in .hub-pulse { animation: travel 1.6s var(--out) calc(1s + var(--i) * .35s) 3 both; }
+@keyframes travel {
+  0% { left: var(--x); top: var(--y); opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { left: 50%; top: 50%; opacity: 0; }
+}
+@media (max-width: 480px) { .hub-node { font-size: 10.5px; padding: 6px 9px; } .hub-tile { width: 52px; } }
+
+/* clock card */
+.clock-stat { margin-top: auto; padding: 18px 0 4px; border-top: 1px solid rgba(255,255,255,.08); }
+.clock-stat .big { font-size: clamp(56px, 6vw, 76px); color: var(--lime); }
+.clock-stat .big small { font-size: .4em; color: var(--silver-g); }
+.clock-stat .mono { margin-top: 6px; }
+
+/* nav over the lime plate */
+.nav.on-plate { background-color: rgba(0,0,0,.86); }
+
+/* quotes waiting */
+.quote-rows { display: grid; gap: 8px; margin-top: 14px; }
+.quote-rows li { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; padding: 10px 12px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07); font-size: 14.5px; color: var(--white); }
+
+/* speed bars */
+.speed { display: grid; gap: 16px; }
+.speed li { display: grid; grid-template-columns: 78px 1fr 48px; gap: 14px; align-items: center; }
+.speed .val { text-align: right; color: var(--gray); }
+.speed .val.lime { color: var(--lime); }
+.bar { position: relative; height: 10px; border-radius: 999px; background: rgba(255,255,255,.06); overflow: hidden; }
+.bar i { position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(90deg, rgba(228,248,36,.55), var(--lime)); transform-origin: left; transform: scaleX(0); transition: transform 1.4s var(--lock) .3s; box-shadow: 0 0 16px rgba(228,248,36,.35); }
+.bar i { width: calc(var(--w) * 100%); }
+.speed li:nth-child(2) .bar i { transition-delay: .4s; }
+.speed li:nth-child(3) .bar i { transition-delay: .5s; }
+.speed li:nth-child(4) .bar i { transition-delay: .6s; }
+.in .bar i, .reduce .bar i { transform: scaleX(1); }
+.axis { display: flex; justify-content: space-between; margin-top: 10px; font-size: 11px; }
+.card .axis { padding-left: 92px; padding-right: 62px; }
+
+/* ---------- Dashboard ---------- */
+
+.dash { padding: clamp(14px, 2vw, 22px); }
+.dash-head { display: flex; align-items: center; gap: 12px; padding: 4px 6px 16px; flex-wrap: wrap; }
+.dash-title { font-weight: 600; color: var(--white); flex: 1; white-space: nowrap; }
+@media (max-width: 480px) { .dash-time { display: none; } }
+.dash-grid { display: grid; gap: 14px; grid-template-columns: repeat(12, 1fr); }
+.panel { padding: 20px; border-radius: 18px; background-color: rgba(255,255,255,.035); min-width: 0; }
+.p-week { grid-column: span 5; }
+.p-ring { grid-column: span 3; display: grid; place-items: center; text-align: center; gap: 10px; }
+.p-wait { grid-column: span 4; }
+.p-cpl { grid-column: span 5; }
+.p-today { grid-column: span 3; }
+.p-slept { grid-column: span 4; }
+@media (max-width: 1080px) {
+  .p-week, .p-cpl { grid-column: span 12; }
+  .p-ring, .p-wait, .p-today, .p-slept { grid-column: span 6; }
+}
+@media (max-width: 640px) {
+  .dash-grid > * { grid-column: span 12 !important; }
+}
+.plabel { margin-bottom: 8px; }
+.prow { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.big { font-size: 44px; line-height: 1.05; font-weight: 600; color: var(--white); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.big-inline { font-size: 34px; font-weight: 600; color: var(--lime); line-height: 1; }
+
+.week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: 16px; }
+.week .col { display: grid; gap: 4px; justify-items: center; }
+.week .cells { display: flex; flex-direction: column-reverse; gap: 4px; height: 128px; }
+.week .cell { width: 18px; height: 9px; border-radius: 3px; background: rgba(255,255,255,.07); transform: scaleY(0); transform-origin: bottom; transition: transform .5s var(--lock), background-color .4s ease; }
+.week .cell.on { background: rgba(255,255,255,.55); }
+.week .col.today .cell.on { background: var(--lime); box-shadow: 0 0 10px rgba(228,248,36,.5); }
+.week .col.future .cell { background: transparent; box-shadow: inset 0 0 0 1px rgba(255,255,255,.07); }
+.in .week .cell, .reduce .week .cell { transform: scaleY(1); }
+.week .day { font-family: var(--f-mono); font-size: 11px; color: var(--silver-g); text-transform: lowercase; }
+.week .col.today .day { color: var(--lime); }
+
+.ring { position: relative; width: 150px; height: 150px; }
+.ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring circle { fill: none; stroke-width: 9; }
+.ring-bg { stroke: rgba(255,255,255,.07); }
+.ring-fg { stroke: var(--lime); stroke-linecap: round; stroke-dasharray: 0 100; transition: stroke-dasharray 1.8s var(--lock) .3s; filter: drop-shadow(0 0 6px rgba(228,248,36,.5)); }
+.ring-num { position: absolute; inset: 0; display: grid; place-content: center; grid-auto-flow: column; align-items: baseline; font-size: 38px; font-weight: 600; color: var(--white); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.ring-num small { font-size: 18px; color: var(--silver-g); margin-left: 2px; }
+.ring-label { font-size: 14px; color: var(--gray); max-width: 18ch; line-height: 1.4; }
+
+.avatars { display: flex; margin: 14px 0 16px; }
+.avatars span { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font: 500 13px var(--f-mono); color: var(--white); background: #1a1a1a; border: 2px solid #0a0a0a; box-shadow: 0 0 0 1px rgba(255,255,255,.1); margin-right: -10px; }
+.avatars span:nth-child(2) { background: #262626; }
+.avatars .more { background: var(--lime); color: #000; }
+.wait-num { font-size: 20px; color: var(--gray); margin-bottom: 6px; }
+.wait-num b { color: var(--white); font-weight: 600; }
+
+.line-chart { width: 100%; height: 110px; margin-top: 12px; overflow: visible; }
+.line-chart .area { fill: url(#cplFill); opacity: 0; transition: opacity 1.2s ease .8s; }
+.line-chart .ln { fill: none; stroke: var(--lime); stroke-width: 2; vector-effect: non-scaling-stroke; stroke-dasharray: 1 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.8s var(--out) .3s; filter: drop-shadow(0 0 6px rgba(228,248,36,.45)); }
+.line-chart .grid { stroke: rgba(255,255,255,.08); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.in .line-chart .ln, .reduce .line-chart .ln { stroke-dashoffset: 0; }
+.in .line-chart .area, .reduce .line-chart .area { opacity: 1; }
+.p-cpl .axis { margin-top: 6px; }
+
+.appts { display: grid; gap: 8px; margin-top: 6px; }
+.appts li { display: grid; grid-template-columns: 48px 1fr; gap: 2px 10px; padding: 10px 12px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07); font-size: 14.5px; color: var(--white); }
+.appts li .small { grid-column: 2; }
+
+.small-copy { font-size: 14px; color: var(--gray); margin: 4px 0 14px; }
+.bubbles { display: grid; gap: 8px; }
+.bubble { position: relative; padding: 10px 12px 8px; border-radius: 14px 14px 14px 4px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.07); font-size: 14px; line-height: 1.45; color: var(--gray); }
+.bubble .mono { display: block; margin-top: 4px; font-size: 10.5px; }
+
+/* ---------- Timeline ---------- */
+
+.timeline, .iso-card { padding: clamp(18px, 2.4vw, 28px); }
+.tl-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding-bottom: 14px; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.tl-head > .mono:first-child { color: var(--white); }
+.tl-rows { display: grid; }
+.tl-row { display: grid; grid-template-columns: 130px 1fr 58px; gap: 14px; align-items: center; min-height: 48px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.tl-label { font-size: 14.5px; color: var(--gray); }
+.tl-track { position: relative; height: 12px; }
+.tl-track::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(255,255,255,.06); }
+.tl-track i {
+  position: absolute; top: 0; bottom: 0; border-radius: 999px;
+  left: calc(var(--a) * 100%); width: max(6px, calc((var(--b) - var(--a)) * 100%));
+  background: rgba(228,248,36,.7); transform: scaleX(0); transform-origin: left;
+  transition: transform .7s var(--lock);
+}
+.tl-row.is-key i { background: var(--lime); box-shadow: 0 0 18px rgba(228,248,36,.6); }
+.tl-row.is-key .tl-label { color: var(--white); font-weight: 600; }
+.tl-t { text-align: right; }
+.tl-axis { display: flex; justify-content: space-between; padding: 10px 72px 0 144px; font-size: 11px; }
+.in .tl-row i, .reduce .tl-row i { transform: scaleX(1); }
+.tl-row:nth-child(1) i { transition-delay: .3s; }
+.tl-row:nth-child(2) i { transition-delay: .7s; }
+.tl-row:nth-child(3) i { transition-delay: 1.1s; }
+.tl-row:nth-child(4) i { transition-delay: 1.5s; }
+.tl-row:nth-child(5) i { transition-delay: 1.9s; }
+@media (max-width: 520px) {
+  .tl-row { grid-template-columns: 104px 1fr 48px; gap: 10px; }
+  .tl-label { font-size: 13px; }
+  .tl-axis { padding: 10px 58px 0 114px; }
+}
+
+/* ---------- WhatsApp card ---------- */
+
+.wa { padding: 18px; max-width: 520px; width: 100%; justify-self: center; }
+.wa-head { display: flex; align-items: center; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.wa-name { font-weight: 600; color: var(--white); font-size: 15px; }
+.wa-time { margin-left: auto; }
+.wa-body { position: relative; min-height: 118px; padding: 18px 0 14px; display: flex; align-items: flex-start; }
+.typing { display: inline-flex; gap: 5px; padding: 14px 16px; border-radius: 16px 16px 16px 4px; background: rgba(255,255,255,.08); position: absolute; left: 0; top: 18px; opacity: 0; transition: opacity .3s ease; }
+.typing i { width: 7px; height: 7px; border-radius: 50%; background: var(--silver-g); animation: bob 1s ease-in-out infinite; }
+.typing i:nth-child(2) { animation-delay: .15s; }
+.typing i:nth-child(3) { animation-delay: .3s; }
+@keyframes bob { 0%, 100% { transform: translateY(0); opacity: .5; } 50% { transform: translateY(-4px); opacity: 1; } }
+.wa.is-typing .typing { opacity: 1; }
+.wa-msg { padding: 12px 14px 8px; border-radius: 16px 16px 16px 4px; background: rgba(228,248,36,.1); border: 1px solid rgba(228,248,36,.25); max-width: 92%; opacity: 0; transform: translateY(8px) scale(.97); transform-origin: left bottom; transition: opacity .5s var(--lock), transform .6s var(--lock); }
+.wa-msg p { color: var(--white); font-size: 15.5px; line-height: 1.45; }
+.wa-msg .mono { display: block; text-align: right; font-size: 10.5px; margin-top: 4px; }
+.wa.is-sent .wa-msg, .reduce .wa-msg { opacity: 1; transform: none; }
+.wa-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.wa-note { min-height: 18px; margin-top: 10px; }
+#waConfirm.is-done { background: rgba(228,248,36,.14); color: var(--lime); box-shadow: inset 0 0 0 1px rgba(228,248,36,.4); }
+
+/* ---------- Isometric record ---------- */
+
+.record { display: grid; gap: 40px; align-items: center; grid-template-columns: minmax(0, 1fr); }
+.record .sec-head { margin-bottom: 0; }
+@media (min-width: 960px) { .record { grid-template-columns: .8fr 1.2fr; gap: 64px; } }
+.iso { width: 100%; height: auto; margin-top: 8px; overflow: visible; }
+.iso text { font-family: var(--f-mono); font-size: 10.5px; fill: var(--silver-g); }
+
+/* ---------- Services ---------- */
+
+.svc-grid { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 1000px) { .svc-grid { grid-template-columns: repeat(3, 1fr); } }
+.svc { padding: clamp(24px, 2.6vw, 32px); display: flex; flex-direction: column; }
+.svc-ic { width: 52px; height: 52px; fill: none; stroke: var(--lime); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 24px; filter: drop-shadow(0 0 10px rgba(228,248,36,.35)); }
+.svc .h3 { margin-bottom: 10px; }
+.svc-intro { color: var(--gray); margin-bottom: 22px; }
+.checks { display: grid; gap: 10px; }
+.checks li { position: relative; padding-left: 28px; font-size: 15.5px; line-height: 1.5; color: var(--gray); }
+.checks li::before { content: ""; position: absolute; left: 2px; top: 5px; width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(228,248,36,.5); background: radial-gradient(circle, var(--lime) 0 2px, transparent 2.5px); }
+.svc-more { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .6s var(--lock); }
+.svc-more > div { overflow: hidden; }
+.svc-more p { padding-top: 22px; margin-top: 22px; border-top: 1px solid rgba(255,255,255,.08); color: var(--gray); }
+.svc.is-open .svc-more { grid-template-rows: 1fr; }
+.more-btn { margin-top: 26px; align-self: flex-start; }
+.more-btn .ic { width: 18px; height: 18px; transition: transform .5s var(--spring); }
+.svc.is-open .more-btn .ic { transform: rotate(180deg); }
+.svc.is-open { box-shadow: inset 0 1px 0 rgba(228,248,36,.35), inset 0 -1px 0 rgba(0,0,0,.4), 0 30px 70px -34px rgba(0,0,0,.9); }
+
+/* ---------- How it works: lime plate ---------- */
+
+.how { height: 380vh; scroll-margin-top: 0; }
+.how-sticky { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+.how-plate {
+  position: absolute; inset: 0;
+  background-color: var(--lime);
+  background-image: var(--dots);
+  background-size: 18px 18px;
+  color: #000;
+  clip-path: inset(50% 50% 50% 50% round 20px);
+  display: grid; place-items: center;
+}
+.how-content { width: min(1100px, 100% - 48px); opacity: 0; }
+.how-label { color: rgba(0,0,0,.6); margin-bottom: 14px; }
+.how-title { color: #000; margin-bottom: clamp(28px, 5vh, 56px); }
+.how-title em { color: #000; }
+.steps { display: grid; gap: 0; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(0,0,0,.18); }
+.step { padding: 24px 22px 0 0; opacity: .28; transform: translateY(10px); transition: opacity .6s var(--lock), transform .7s var(--lock); }
+.step + .step { padding-left: 22px; border-left: 1px solid rgba(0,0,0,.14); }
+.step.on { opacity: 1; transform: none; }
+.step-num { display: block; font: 500 13px var(--f-mono); color: rgba(0,0,0,.7); margin-bottom: 14px; }
+.step p { font-size: clamp(22px, 2.4vw, 32px); line-height: 1.15; font-weight: 600; letter-spacing: -0.01em; color: #000; }
+.how-tile { position: absolute; left: 50%; top: 50%; width: 110px; transform: translate(-50%, -50%) scale(.6); opacity: 0; box-shadow: 0 0 80px rgba(228,248,36,.45); }
+.how-tile .mark { stroke-width: 44; }
+@media (max-width: 800px) {
+  .how { height: 340vh; }
+  .steps { grid-template-columns: minmax(0, 1fr); border-top: 0; }
+  .step, .step + .step { padding: 16px 0; border-left: 0; border-top: 1px solid rgba(0,0,0,.16); display: grid; grid-template-columns: 44px 1fr; align-items: baseline; }
+  .step-num { margin: 0; }
+  .step p { font-size: 22px; }
+  .how-title { margin-bottom: 20px; }
+}
+.how.is-static { height: auto; }
+.how.is-static .how-sticky { position: relative; height: auto; padding: 24px 12px; }
+.how.is-static .how-plate { position: relative; clip-path: inset(0 round 28px); padding: 72px 0; }
+.how.is-static .how-content { opacity: 1; }
+.how.is-static .step { opacity: 1; transform: none; }
+.how.is-static .how-tile { display: none; }
+
+/* ---------- Numbers (sample) ---------- */
+
+.sample { position: absolute; top: 14px; right: 14px; padding: 2px 9px; border-radius: 999px; border: 1px dashed rgba(228,248,36,.45); color: var(--lime) !important; font-size: 11px; }
+.stats { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); margin-bottom: 20px; }
+@media (min-width: 860px) { .stats { grid-template-columns: repeat(3, 1fr); } }
+.stat { padding: 28px; }
+.stat-num { font-size: clamp(56px, 6vw, 76px); line-height: 1; font-weight: 600; letter-spacing: -0.03em; color: var(--white); margin-bottom: 10px; font-variant-numeric: tabular-nums; }
+.stat-num small { font-size: .45em; color: var(--silver-g); letter-spacing: 0; }
+.stat:nth-child(2) .stat-num { color: var(--lime); }
+.spark { display: flex; align-items: flex-end; gap: 4px; height: 38px; margin-top: 22px; }
+.spark i { flex: 1; border-radius: 2px 2px 0 0; background: rgba(228,248,36,.35); transform: scaleY(0); transform-origin: bottom; transition: transform .7s var(--lock); }
+.spark i:last-child { background: var(--lime); box-shadow: 0 0 10px rgba(228,248,36,.5); }
+.in .spark i, .reduce .spark i { transform: scaleY(1); }
+
+.quotes { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 860px) { .quotes { grid-template-columns: repeat(3, 1fr); } }
+.quote { padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
+.quote blockquote p { font-size: 17px; line-height: 1.6; color: var(--gray); padding-top: 18px; }
+.quote figcaption { display: flex; align-items: center; gap: 12px; }
+.quote figcaption b { display: block; color: var(--white); font-weight: 600; font-size: 15px; }
+.quote figcaption .mono { display: block; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: #000; color: var(--lime); border: 1px solid rgba(228,248,36,.55); font: 600 16px var(--f-sans); flex: none; }
+
+/* ---------- Pricing ---------- */
+
+.calc { display: grid; gap: 28px; padding: clamp(22px, 3vw, 36px); grid-template-columns: minmax(0, 1fr); margin-bottom: 56px; }
+@media (min-width: 920px) { .calc { grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; } }
+.calc-q { display: block; font-size: 20px; font-weight: 600; color: var(--white); margin-bottom: 18px; }
+.calc-val { display: flex; align-items: baseline; gap: 10px; margin-bottom: 20px; }
+.calc-val #spendOut { font-size: 56px; font-weight: 600; line-height: 1; color: var(--lime); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.range-wrap { position: relative; }
+input[type=range] {
+  --p: 30%;
+  -webkit-appearance: none; appearance: none; width: 100%; height: 44px; background: transparent; cursor: pointer; margin: 0;
+}
+input[type=range]::-webkit-slider-runnable-track { height: 8px; border-radius: 999px; background: linear-gradient(90deg, var(--lime) 0 var(--p), rgba(255,255,255,.1) var(--p) 100%); }
+input[type=range]::-moz-range-track { height: 8px; border-radius: 999px; background: linear-gradient(90deg, var(--lime) 0 var(--p), rgba(255,255,255,.1) var(--p) 100%); }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 30px; height: 30px; margin-top: -11px; border-radius: 50%; background: #fff; border: 0; box-shadow: 0 0 0 6px rgba(228,248,36,.25), 0 4px 14px rgba(0,0,0,.6); transition: transform .3s var(--spring); }
+input[type=range]::-moz-range-thumb { width: 30px; height: 30px; border-radius: 50%; background: #fff; border: 0; box-shadow: 0 0 0 6px rgba(228,248,36,.25), 0 4px 14px rgba(0,0,0,.6); }
+input[type=range]:active::-webkit-slider-thumb { transform: scale(1.12); }
+input[type=range]:focus-visible { outline: none; }
+input[type=range]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px #000, 0 0 0 5px var(--lime); }
+input[type=range]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 3px #000, 0 0 0 5px var(--lime); }
+.range-scale { display: flex; justify-content: space-between; margin-top: 2px; }
+.calc-note { margin-top: 18px; padding: 12px 14px; border-radius: var(--r-row); background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); font-size: 14.5px; color: var(--gray); display: grid; grid-template-rows: 1fr; opacity: 1; transition: opacity .4s ease; }
+.calc-note[hidden] { display: none; }
+.calc-out { display: grid; }
+.calc-out .row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 4px; border-bottom: 1px solid rgba(255,255,255,.08); border-radius: 0; }
+.calc-out dd { font-size: 20px; font-weight: 600; color: var(--white); font-variant-numeric: tabular-nums; text-align: right; }
+.calc-out .row-key { border-bottom: 0; }
+.calc-out .row-key dd { font-size: 30px; color: var(--lime); }
+.calc-out dd.roll { animation: roll .45s var(--lock); }
+@keyframes roll { 0% { filter: blur(3px); transform: translateY(6px); opacity: .5; } 100% { filter: none; transform: none; opacity: 1; } }
+
+.plans-switch { display: flex; justify-content: center; margin-bottom: 28px; }
+.seg { position: relative; display: inline-flex; padding: 5px; gap: 0; }
+.seg button { position: relative; z-index: 1; min-height: 46px; padding: 0 22px; border: 0; background: none; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: 15px; color: var(--silver-g); transition: color .35s ease; }
+.seg button[aria-selected="true"] { color: #000; }
+.seg-thumb { position: absolute; top: 5px; bottom: 5px; left: 5px; border-radius: 999px; background: var(--lime); transition: transform .55s var(--lock), width .55s var(--lock); box-shadow: 0 6px 20px -8px rgba(228,248,36,.7); }
+
+.plans-stack { display: grid; }
+.plans { grid-area: 1 / 1; display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); align-items: stretch; opacity: 0; visibility: hidden; transform: translateY(10px); filter: blur(8px); transition: opacity .5s var(--out), transform .6s var(--lock), filter .5s var(--out), visibility 0s linear .5s; }
+.plans.is-on { opacity: 1; visibility: visible; transform: none; filter: none; transition: opacity .5s var(--out) .1s, transform .6s var(--lock) .1s, filter .5s var(--out) .1s, visibility 0s; }
+@media (min-width: 900px) { .plans { grid-template-columns: repeat(3, 1fr); } }
+.plan { padding: 28px; display: flex; flex-direction: column; cursor: pointer; }
+.plan .h4 { margin-bottom: 12px; padding-right: 40px; }
+.price { display: flex; flex-direction: column; gap: 4px; margin-bottom: 22px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.price .amt { font-size: 44px; font-weight: 600; line-height: 1; letter-spacing: -0.02em; color: var(--white); }
+.plan .checks { margin-bottom: 26px; }
+.plan-btn { margin-top: auto; width: 100%; white-space: normal; text-align: center; }
+.plan-check { position: absolute; top: 24px; right: 24px; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.18); transition: background-color .4s ease, border-color .4s ease, transform .5s var(--spring); }
+.plan-check svg { width: 16px; height: 16px; fill: none; stroke: #000; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0; transition: opacity .3s ease; }
+.plan.is-chosen .plan-check { background: var(--lime); border-color: var(--lime); transform: scale(1.08); }
+.plan.is-chosen .plan-check svg { opacity: 1; }
+.plan.is-chosen { box-shadow: 0 0 0 1px rgba(228,248,36,.7), 0 0 40px -6px rgba(228,248,36,.35), inset 0 1px 0 rgba(228,248,36,.4), 0 30px 70px -34px rgba(0,0,0,.9); }
+.plan.is-chosen .plan-btn { background: var(--lime); color: #000; }
+.plan-hot { padding-top: 28px; }
+.hot-pill { position: absolute; top: -12px; left: 28px; padding: 4px 12px; border-radius: 999px; background: var(--lime); color: #000 !important; font-weight: 500; box-shadow: 0 6px 20px -6px rgba(228,248,36,.7); }
+.plans-fine { text-align: center; margin-top: 24px; }
+
+/* ---------- FAQ ---------- */
+
+.faq { padding: 8px clamp(8px, 2vw, 16px); }
+.qa + .qa { border-top: 1px solid rgba(255,255,255,.08); }
+.qa h3 { font-size: inherit; }
+.qa button {
+  width: 100%; min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  padding: 18px 10px; border: 0; background: none; cursor: pointer; text-align: left;
+  font-size: 18px; font-weight: 600; color: var(--white); letter-spacing: -0.005em;
+}
+.plus { position: relative; width: 32px; height: 32px; border-radius: 50%; flex: none; border: 1px solid rgba(255,255,255,.16); transition: transform .5s var(--spring), background-color .3s ease, border-color .3s ease; }
+.plus::before, .plus::after { content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 1.5px; margin: -.75px 0 0 -6px; background: var(--white); border-radius: 2px; transition: background-color .3s ease; }
+.plus::after { transform: rotate(90deg); }
+.qa button[aria-expanded="true"] .plus { transform: rotate(135deg); background: var(--lime); border-color: var(--lime); }
+.qa button[aria-expanded="true"] .plus::before, .qa button[aria-expanded="true"] .plus::after { background: #000; }
+.ans { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .55s var(--lock); }
+.ans > div { overflow: hidden; }
+.ans p { padding: 0 60px 22px 10px; color: var(--gray); max-width: 64ch; }
+.qa.is-open .ans { grid-template-rows: 1fr; }
+
+/* ---------- CTA and contact ---------- */
+
+.section-cta { padding-bottom: 80px; }
+.cta-grid { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); margin-bottom: 20px; }
+@media (min-width: 960px) { .cta-grid { grid-template-columns: .8fr 1.2fr; } }
+.cta-dark { padding: clamp(28px, 4vw, 44px); display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 280px; }
+.cta-dark-line { font-size: clamp(26px, 2.6vw, 34px); font-weight: 600; color: var(--white); line-height: 1.15; letter-spacing: -0.01em; max-width: 16ch; }
+.cta-lime {
+  position: relative; padding: clamp(28px, 4vw, 48px); border-radius: var(--r-win);
+  background-color: var(--lime); background-image: var(--dots); background-size: 18px 18px; color: #000;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 30px 90px -30px rgba(228,248,36,.45);
+}
+.cta-lime .h2 { max-width: 14ch; margin-bottom: 18px; }
+.cta-lime > p { max-width: 50ch; color: #111; }
+.quick { display: flex; gap: 6px; margin-top: 28px; padding: 6px; border-radius: 999px; background: #000; max-width: 520px; box-shadow: 0 16px 40px -18px rgba(0,0,0,.6); }
+.quick input { flex: 1; min-width: 0; min-height: 50px; padding: 0 18px; border: 0; border-radius: 999px; background: transparent; color: var(--white); font: 500 16px var(--f-sans); }
+.quick input::placeholder { color: #8f8f8b; }
+.quick input:focus-visible { outline: 2px solid var(--lime); outline-offset: -2px; }
+.quick .btn-black { background: var(--lime); color: #000; min-width: 96px; }
+.quick .btn-black:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.quick-msg { min-height: 24px; margin-top: 12px; font-weight: 600; font-size: 15px; }
+.quick-fine { font-size: 13px; color: rgba(0,0,0,.7); }
+
+.contact { padding: clamp(22px, 3.4vw, 40px); }
+.contact-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px; margin-bottom: 26px; }
+.fields { display: grid; gap: 18px 20px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .fields { grid-template-columns: 1fr 1fr; } .field-wide { grid-column: 1 / -1; } }
+.field label { display: block; font-size: 14px; font-weight: 500; color: var(--gray); margin-bottom: 8px; }
+.field input, .field select, .field textarea {
+  width: 100%; min-height: 52px; padding: 12px 16px; border-radius: var(--r-row);
+  background: rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.14); color: var(--white);
+  font: 400 16px/1.4 var(--f-sans); transition: border-color .3s ease, box-shadow .3s ease;
+}
+.field textarea { resize: vertical; min-height: 120px; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--lime); box-shadow: 0 0 0 3px rgba(228,248,36,.18); }
+.field [aria-invalid="true"] { border-color: #ff8a7a; }
+.field ::placeholder { color: #7d7d79; }
+.select-wrap { position: relative; }
+.select-wrap::after { content: ""; position: absolute; right: 18px; top: 50%; width: 8px; height: 8px; margin-top: -6px; border-right: 1.5px solid var(--silver-g); border-bottom: 1.5px solid var(--silver-g); transform: rotate(45deg); pointer-events: none; }
+.field select { -webkit-appearance: none; appearance: none; padding-right: 44px; cursor: pointer; }
+.field select option { background: #111; color: var(--white); }
+.field select.just-filled { animation: filled 1.2s var(--out); }
+@keyframes filled { 0% { box-shadow: 0 0 0 4px rgba(228,248,36,.5); border-color: var(--lime); } 100% { box-shadow: 0 0 0 0 rgba(228,248,36,0); } }
+.check-field { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; }
+.check-field input { width: 24px; height: 24px; min-height: 0; margin: 2px 0 0; padding: 0; accent-color: var(--lime); cursor: pointer; }
+.check-field label { margin: 0; font-size: 15px; line-height: 1.5; cursor: pointer; }
+.check-field .err { grid-column: 2; }
+.err { min-height: 0; margin-top: 6px; color: #ffb3a8 !important; font-size: 12px; }
+.err:empty { display: none; }
+
+.submit-row { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 26px; }
+.submit-btn { position: relative; min-width: 180px; overflow: hidden; transition: min-width .6s var(--lock), width .6s var(--lock), padding .6s var(--lock), translate .4s var(--spring), box-shadow .4s ease; }
+.submit-check { position: absolute; left: 50%; top: 50%; width: 26px; height: 26px; margin: -13px 0 0 -13px; fill: none; stroke: #000; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; opacity: 0; }
+.submit-btn.is-busy .submit-label { opacity: .5; }
+.submit-btn.is-sent { min-width: 56px; width: 56px; padding: 0; }
+.submit-btn.is-sent .submit-label { opacity: 0; }
+.submit-btn.is-sent .submit-check { opacity: 1; transition: stroke-dashoffset .6s var(--out) .35s; stroke-dashoffset: 0; }
+.form-msg { font-size: 15.5px; color: var(--gray); }
+.form-msg.ok { color: var(--white); font-weight: 600; }
+.form-msg.bad { color: #ffb3a8; }
+
+/* ---------- Footer ---------- */
+
+.footer { position: relative; z-index: 2; padding: 20px 0 32px; overflow-x: clip; }
+.foot { display: grid; gap: 32px; padding: clamp(24px, 3vw, 36px); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 720px) { .foot { grid-template-columns: 1.6fr 1fr 1fr 1fr; } }
+.foot-brand p { margin-top: 12px; color: var(--gray); font-size: 15px; }
+.foot-contact { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.foot-contact a, .foot-col a { display: inline-flex; align-items: center; min-height: 44px; color: var(--gray); text-decoration: none; font-size: 15px; transition: color .3s ease; }
+.foot-contact a:hover, .foot-col a:hover { color: var(--lime); }
+.foot-col { display: flex; flex-direction: column; }
+.foot-col .mono { margin-bottom: 4px; }
+.foot-copy { grid-column: 1 / -1; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.08); }
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
+  .pulse-dot::after { animation: none; }
+  .glass::after { animation: none !important; }
+}
+
+</style>
+<script>document.documentElement.classList.add('js');if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('reduce')}else{document.documentElement.classList.add('loading')}</script>
+</head>
+<body>
+
+<!-- Shared symbols and filters -->
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="mark" viewBox="150 210 950 810">
+      <path pathLength="1" d="M394 478H533L627 617L720 478H860L934 610L866 727H1003L1077 858L998 996H840L762 864V680L627 873L492 680V864L412 996H255L176 858L252 727H385L318 610Z"/>
+      <path pathLength="1" d="M533 478L472 364L540 234H708L782 364L720 478"/>
+    </symbol>
+    <filter id="refract" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="16" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- Living background -->
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="bg-static" aria-hidden="true">
+  <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="rib" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#1516F0" stop-opacity=".0"/>
+        <stop offset=".3" stop-color="#1516F0" stop-opacity=".55"/>
+        <stop offset=".55" stop-color="#33E0B0" stop-opacity=".6"/>
+        <stop offset=".8" stop-color="#E4F824" stop-opacity=".7"/>
+        <stop offset="1" stop-color="#E4F824" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" stroke="url(#rib)">
+      <path d="M-100 620C300 420 600 760 900 520S1400 260 1700 380" stroke-width="90"/>
+      <path d="M-100 700C360 520 640 820 960 600S1420 360 1700 460" stroke-width="30" opacity=".7"/>
+      <path d="M-100 540C260 380 620 680 940 470S1380 200 1700 300" stroke-width="18" opacity=".6"/>
+    </g>
+  </svg>
+</div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<!-- Loading sequence -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-plate" id="loaderPlate">
+    <div class="loader-copy" id="loaderCopy">
+      <p class="mono loader-label">what we are for</p>
+      <p class="loader-line" id="loaderLine">The best lead is the one you never had to chase.</p>
+    </div>
+    <p class="mono loader-skip">tap or press any key to skip</p>
+  </div>
+  <div class="loader-tile" id="loaderTile"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></div>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Navigation -->
+<header class="nav glass" id="nav">
+  <a href="#top" class="brand" data-nav-link aria-label="Meridian Labs, back to top">
+    <span class="tile tile-sm" id="navTile" data-stream data-stream-fixed><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+    <span class="brand-name">Meridian Labs</span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#services" data-nav-link>Services</a>
+    <a href="#how" data-nav-link>How it works</a>
+    <a href="#tuesday" data-nav-link>A Tuesday</a>
+    <a href="#pricing" data-nav-link>Pricing</a>
+    <a href="#faq" data-nav-link>FAQ</a>
+  </nav>
+  <div class="nav-right">
+    <!-- PLACEHOLDER: update the number of open spots each month -->
+    <span class="status-pill glass pill"><span class="pulse-dot" aria-hidden="true"></span><span class="mono"><span class="spots">2</span> spots open this month</span></span>
+    <a class="btn btn-lime btn-sm" href="#contact" data-book>Book a call</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuSheet" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="menu-sheet glass lg" id="menuSheet">
+  <nav aria-label="Mobile">
+    <a href="#services" data-nav-link>Services</a>
+    <a href="#how" data-nav-link>How it works</a>
+    <a href="#tuesday" data-nav-link>A Tuesday</a>
+    <a href="#pricing" data-nav-link>Pricing</a>
+    <a href="#faq" data-nav-link>FAQ</a>
+  </nav>
+  <div class="menu-foot">
+    <span class="status-pill glass pill"><span class="pulse-dot" aria-hidden="true"></span><span class="mono"><span class="spots">2</span> spots open this month</span></span>
+    <a class="btn btn-lime" href="#contact" data-book>Book a call</a>
+  </div>
+</div>
+
+<main id="main">
+  <svg class="stream" id="stream" aria-hidden="true" preserveAspectRatio="none">
+    <path class="stream-track" id="streamTrack"/>
+    <path class="stream-glow2" id="streamGlow2"/>
+    <path class="stream-glow" id="streamGlow"/>
+    <path class="stream-core" id="streamCore"/>
+    <circle class="stream-head-halo" id="streamHalo" r="18"/>
+    <circle class="stream-head" id="streamHead" r="4"/>
+  </svg>
+
+  <!-- HERO -->
+  <section class="hero" id="top" data-pose="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="tag glass pill mono reveal">websites / ads / booking for trades in Cork</p>
+        <h1 class="h1 reveal">Your enquiries answer <em>themselves</em>.</h1>
+        <p class="lead reveal">We build your website, run your ads, and set up an assistant that texts every new lead in under a minute, checks they are serious, and books them into your calendar.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-lime" href="#contact" data-book>Book a free call</a>
+          <button class="btn btn-glass glass pill" id="openVideo" type="button">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l5.5-3.5z"/></svg>
+            See how it works, 2 minutes
+          </button>
+        </div>
+        <p class="mono hero-fine reveal">no setup fee for founding clients / you own your ad account / cancel after 3 months</p>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="float">
+          <div class="tilt" id="tilt">
+            <div class="window glass lg refract" id="heroWindow" data-stream>
+              <div class="win-head">
+                <span class="win-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <p class="win-title"><span>Roof repair enquiries</span> <span class="mono">/ 4 steps / 1 branch</span></p>
+                <span class="run-pill mono"><i aria-hidden="true"></i>running</span>
+              </div>
+              <div class="flow" id="flow">
+                <svg class="flow-lines" id="flowLines" aria-hidden="true"></svg>
+                <button type="button" class="node" data-node="n1" style="--x:3%;--y:3%" data-tip="Someone fills in the form on your Facebook ad and their details land here straight away.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v10H8l-4 4z"/></svg></span>
+                  <span class="node-txt"><b>New enquiry</b><small class="mono">facebook ad</small></span>
+                </button>
+                <button type="button" class="node node-cond" data-node="n2" style="--x:3%;--y:38%" data-tip="The assistant checks the job is inside the area you cover before anything else happens.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 9-9 9-9-9z"/></svg></span>
+                  <span class="node-txt"><b>Inside 25 km?</b><small class="mono">condition</small></span>
+                </button>
+                <button type="button" class="node" data-node="n6" style="--x:3%;--y:73%" data-tip="People outside your area get a kind reply and stay on a list for later, so nobody is ignored.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-3-6.2M20 4v5h-5"/></svg></span>
+                  <span class="node-txt"><b>Polite reply and nurture</b><small class="mono">no branch</small></span>
+                </button>
+                <button type="button" class="node" data-node="n3" style="--x:53%;--y:3%" data-tip="A friendly text goes out in your business name in under a minute, day or night.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></span>
+                  <span class="node-txt"><b>Text in 60 seconds</b><small class="mono">sms</small></span>
+                </button>
+                <button type="button" class="node" data-node="n4" style="--x:53%;--y:38%" data-tip="A few quick questions confirm the job, the budget and when they want it done.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+                  <span class="node-txt"><b>Qualified</b><small class="mono">area, budget, timeline</small></span>
+                </button>
+                <button type="button" class="node node-end" data-node="n5" style="--x:53%;--y:73%" data-tip="Serious leads pick a free slot in your calendar and get a reminder the day before.">
+                  <span class="node-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span>
+                  <span class="node-txt"><b>Booked in calendar</b><small class="mono">thursday 10:00</small></span>
+                </button>
+                <span class="branch mono" id="branchYes">yes</span>
+                <span class="branch mono" id="branchNo">no</span>
+                <div class="flow-tip glass" id="flowTip" role="status" aria-live="polite"></div>
+              </div>
+              <div class="log">
+                <div class="log-head mono"><span>last leads</span><span class="ex-pill">example</span></div>
+                <ul class="mono">
+                  <li><i class="dot"></i><span class="t">08:14</span><span class="who">aoife, douglas, roof repair</span><span class="st lime">booked</span><span class="s">41 s</span></li>
+                  <li><i class="dot"></i><span class="t">07:52</span><span class="who">martin, blackrock, gutter repair</span><span class="st">qualified</span><span class="s">38 s</span></li>
+                  <li><i class="dot dim"></i><span class="t">06:31</span><span class="who">niamh, fermoy, roof repair</span><span class="st">nurture</span><span class="s">29 s</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELIABLE -->
+  <section class="section" id="reliable" data-pose="reliable">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">always on</p>
+        <h2 class="h2">Reliable in the ways that <em>matter</em></h2>
+        <p class="lead">Your leads are answered at 3am, on Christmas Eve, and in the middle of a job. You never have to remember to follow up.</p>
+      </header>
+      <div class="grid-2" data-stagger>
+        <article class="card glass lift reveal" data-stream>
+          <div class="card-head">
+            <h3 class="h3">Every channel, one inbox</h3>
+            <p>Ads, messages, your website and missed calls all land in one place and get the same fast reply.</p>
+          </div>
+          <div class="hub" id="hub">
+            <svg class="hub-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line pathLength="1" x1="20" y1="18" x2="50" y2="50"/>
+              <line pathLength="1" x1="80" y1="18" x2="50" y2="50"/>
+              <line pathLength="1" x1="12" y1="64" x2="50" y2="50"/>
+              <line pathLength="1" x1="88" y1="64" x2="50" y2="50"/>
+              <line pathLength="1" x1="50" y1="90" x2="50" y2="50"/>
+            </svg>
+            <span class="hub-node glass pill mono" style="--x:20%;--y:18%">facebook ads</span>
+            <span class="hub-node glass pill mono" style="--x:80%;--y:18%">instagram</span>
+            <span class="hub-node glass pill mono" style="--x:12%;--y:64%">website form</span>
+            <span class="hub-node glass pill mono" style="--x:88%;--y:64%">google profile</span>
+            <span class="hub-node glass pill mono" style="--x:50%;--y:90%">missed calls</span>
+            <span class="hub-pulse" style="--x:20%;--y:18%;--i:0"></span>
+            <span class="hub-pulse" style="--x:80%;--y:18%;--i:1"></span>
+            <span class="hub-pulse" style="--x:12%;--y:64%;--i:2"></span>
+            <span class="hub-pulse" style="--x:88%;--y:64%;--i:3"></span>
+            <span class="hub-pulse" style="--x:50%;--y:90%;--i:4"></span>
+            <span class="tile hub-tile"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+          </div>
+        </article>
+        <article class="card glass lift reveal">
+          <div class="card-head">
+            <div class="card-title-row"><h3 class="h3">Answered around the clock</h3><span class="ex-pill mono">example data</span></div>
+            <p>Average time to first reply, by time of day. Anything under 60 seconds wins the job more often.</p>
+          </div>
+          <div class="clock-stat">
+            <p class="big"><span data-count="37">37</span><small> s</small></p>
+            <p class="mono">average first reply, any hour of the day or night</p>
+          </div>
+          <ul class="speed" aria-label="Average reply time by time of day, example data">
+            <li><span class="mono">morning</span><span class="bar"><i style="--w:.63"></i></span><span class="mono val"><span data-count="38">38</span> s</span></li>
+            <li><span class="mono">daytime</span><span class="bar"><i style="--w:.73"></i></span><span class="mono val"><span data-count="44">44</span> s</span></li>
+            <li><span class="mono">evening</span><span class="bar"><i style="--w:.6"></i></span><span class="mono val"><span data-count="36">36</span> s</span></li>
+            <li><span class="mono">overnight</span><span class="bar"><i style="--w:.52"></i></span><span class="mono val lime"><span data-count="31">31</span> s</span></li>
+          </ul>
+          <div class="axis mono" aria-hidden="true"><span>0 s</span><span>30 s</span><span>60 s</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- A TUESDAY -->
+  <section class="section" id="tuesday" data-pose="tuesday">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">the dashboard</p>
+        <h2 class="h2">A <em>Tuesday</em>, seen from Meridian</h2>
+        <p class="lead">What a roofer sees at 7:40 on a Tuesday, before the van starts.</p>
+      </header>
+
+      <div class="dash glass lg refract reveal" data-stream>
+        <div class="dash-head">
+          <span class="tile tile-xs"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+          <p class="dash-title">Your week so far</p>
+          <span class="mono dash-time">tue 07:40</span>
+          <span class="ex-pill mono">example data</span>
+        </div>
+        <div class="dash-grid" data-stagger>
+          <div class="panel glass lift reveal p-week">
+            <p class="mono plabel">enquiries this week</p>
+            <p class="big"><span data-count="13">13</span></p>
+            <div class="week" id="week" data-values="9,4,0,0,0,0,0" data-today="1" aria-label="9 enquiries on Monday, 4 so far today"></div>
+          </div>
+          <div class="panel glass lift reveal p-ring">
+            <div class="ring" id="ring" data-value="97">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="50"/><circle class="ring-fg" cx="60" cy="60" r="50" pathLength="100"/></svg>
+              <p class="ring-num"><span data-count="97">97</span><small>%</small></p>
+            </div>
+            <p class="ring-label">of leads texted within 60 seconds</p>
+          </div>
+          <div class="panel glass lift reveal p-wait">
+            <p class="mono plabel">waiting on you</p>
+            <div class="avatars" aria-hidden="true"><span>JK</span><span>MB</span><span class="more">+1</span></div>
+            <p class="wait-num"><b><span data-count="2">2</span> quotes</b> to send</p>
+            <p class="mono small">oldest waiting 1 day</p>
+            <ul class="quote-rows">
+              <li class="row"><span>Velux replacement</span><span class="mono small">john k, ballinlough</span></li>
+              <li class="row"><span>Chimney repair</span><span class="mono small">mary b, bishopstown</span></li>
+            </ul>
+          </div>
+          <div class="panel glass lift reveal p-cpl">
+            <div class="prow"><p class="mono plabel">cost per lead this month</p><p class="mono small lime">down €3.10</p></div>
+            <p class="big">€<span data-count="17.40" data-dec="2">17.40</span></p>
+            <svg class="line-chart" id="cplChart" viewBox="0 0 300 110" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <div class="axis mono" aria-hidden="true"><span>sep 1</span><span>sep 15</span><span>today</span></div>
+          </div>
+          <div class="panel glass lift reveal p-today">
+            <p class="mono plabel">today</p>
+            <ul class="appts">
+              <li class="row"><span class="lime mono">10:00</span><span>Roof survey</span><span class="mono small">douglas</span></li>
+              <li class="row"><span class="lime mono">13:30</span><span>Chimney flashing</span><span class="mono small">rochestown</span></li>
+              <li class="row"><span class="lime mono">16:00</span><span>Reroof quote</span><span class="mono small">glanmire</span></li>
+            </ul>
+          </div>
+          <div class="panel glass lift reveal p-slept">
+            <div class="prow"><p class="mono plabel">while you slept</p><p class="big-inline"><span data-count="3">3</span></p></div>
+            <p class="small-copy">enquiries answered between 22:00 and 07:00</p>
+            <div class="bubbles">
+              <p class="bubble">Thursday at 10 is perfect, see you then.<span class="mono">aoife, 23:48</span></p>
+              <p class="bubble">Booked for Friday 9:00. Thanks for getting back so fast.<span class="mono">tom, 05:12</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLLOW UP -->
+  <section class="section" id="followup" data-pose="followup">
+    <div class="wrap">
+      <div class="split">
+        <header class="sec-head reveal">
+          <p class="eyebrow mono">follow up</p>
+          <h2 class="h2">Most of winning a job is <em>follow up</em></h2>
+          <p class="lead">One lead, every step. Nobody forgets to call back.</p>
+        </header>
+        <div class="timeline glass lg lift reveal" id="timeline">
+          <div class="tl-head"><p class="mono">lead 41982</p><span class="ex-pill mono">example data</span></div>
+          <div class="tl-rows">
+            <div class="tl-row" style="--a:0;--b:.012"><span class="tl-label">enquiry received</span><span class="tl-track"><i></i></span><span class="mono tl-t">0 s</span></div>
+            <div class="tl-row" style="--a:0;--b:.161"><span class="tl-label">text sent</span><span class="tl-track"><i></i></span><span class="mono tl-t">29 s</span></div>
+            <div class="tl-row" style="--a:.161;--b:.522"><span class="tl-label">reply received</span><span class="tl-track"><i></i></span><span class="mono tl-t">94 s</span></div>
+            <div class="tl-row" style="--a:.522;--b:.722"><span class="tl-label">qualified</span><span class="tl-track"><i></i></span><span class="mono tl-t">130 s</span></div>
+            <div class="tl-row is-key" style="--a:.722;--b:.933"><span class="tl-label">booked</span><span class="tl-track"><i></i></span><span class="mono tl-t lime">168 s</span></div>
+          </div>
+          <div class="tl-axis mono" aria-hidden="true"><span>0 s</span><span>60 s</span><span>120 s</span><span>180 s</span></div>
+        </div>
+      </div>
+
+      <div class="split split-rev">
+        <div class="wa glass lg lift reveal" id="wa" data-stream>
+          <div class="wa-head">
+            <span class="tile tile-sm"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+            <div><p class="wa-name">Meridian bookings</p><p class="mono small">on whatsapp</p></div>
+            <span class="mono small wa-time">07:41</span>
+          </div>
+          <div class="wa-body">
+            <div class="typing" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="wa-msg">
+              <p>New booking: Aoife, Douglas, Thursday 10:00, roof survey</p>
+              <span class="mono">07:41</span>
+            </div>
+          </div>
+          <div class="wa-actions">
+            <button type="button" class="btn btn-lime btn-sm" id="waConfirm">Confirm</button>
+            <button type="button" class="btn btn-glass glass pill btn-sm" id="waCall">Call her</button>
+          </div>
+          <p class="mono small wa-note" id="waNote" role="status"></p>
+        </div>
+        <header class="sec-head reveal">
+          <h2 class="h2 h2-sm">Updates where you <em>already</em> are</h2>
+          <p class="lead">You get booked jobs on WhatsApp. No new app to learn.</p>
+        </header>
+      </div>
+
+      <div class="record">
+        <header class="sec-head reveal">
+          <h2 class="h2 h2-sm">Every lead is on the <em>record</em></h2>
+          <p class="lead">Every enquiry, text and booking is saved, so you can see what each week brought in and where it came from.</p>
+        </header>
+        <div class="iso-card glass lg lift reveal">
+          <div class="tl-head"><p class="mono">enquiries per week, last 12 weeks</p><span class="ex-pill mono">example data</span></div>
+          <svg class="iso" id="iso" role="img" aria-label="Enquiries per week rising from 14 to 36 over twelve weeks, example data"></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services" data-pose="services">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">what we do</p>
+        <h2 class="h2">Three services, one <em>system</em>.</h2>
+        <p class="lead">Each one works on its own. Together they turn strangers into booked jobs without you chasing anyone.</p>
+      </header>
+      <div class="svc-grid" data-stagger>
+        <article class="svc glass lift reveal">
+          <svg class="svc-ic" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="38" height="28" rx="4"/><path d="M5 15h38M10 11.5h.01M14 11.5h.01M18 11.5h.01"/><rect x="11" y="20" width="14" height="10" rx="1.5"/><path d="M29 21h9M29 25h9M29 29h6M18 40h12M24 36v4"/></svg>
+          <h3 class="h3">Web design</h3>
+          <p class="svc-intro">A website that makes you look like the best firm in your area and turns visitors into calls.</p>
+          <p class="mono plabel">included</p>
+          <ul class="checks">
+            <li>Mobile first design built around your trade</li>
+            <li>Tap to call and WhatsApp buttons</li>
+            <li>A quote form that goes straight to your email</li>
+            <li>Your real job photos and reviews</li>
+            <li>Your own domain connected</li>
+            <li>Google Analytics, so you can see who visits</li>
+            <li>Google Business Profile set up so you show on Maps</li>
+            <li>Service area pages so you appear when people search your town</li>
+          </ul>
+          <div class="svc-more" id="svcMore1"><div><p>Most people check you out on their phone before they ring. If your site is slow, old, or missing, they ring someone else. We build your site before you pay a cent, from your Facebook page and photos. You look at the live link and only pay if you want it. Sites load fast, work on every phone, and are yours to keep.</p></div></div>
+          <button type="button" class="btn btn-glass glass pill btn-sm more-btn" aria-expanded="false" aria-controls="svcMore1"><span>Read more</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </article>
+        <article class="svc glass lift reveal" data-stream>
+          <svg class="svc-ic" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="24" r="3"/><path d="M24 3v6M24 39v6M3 24h6M39 24h6"/></svg>
+          <h3 class="h3">Lead generation</h3>
+          <p class="svc-intro">A steady flow of enquiries from people near you who need your trade.</p>
+          <p class="mono plabel">included</p>
+          <ul class="checks">
+            <li>Ads shown to homeowners within your chosen radius</li>
+            <li>A landing page built for one clear offer</li>
+            <li>Qualifying questions on every form</li>
+            <li>An AI assistant that texts each lead within 60 seconds</li>
+            <li>Area, budget and timeline checked before they reach you</li>
+            <li>Good leads book themselves into your calendar</li>
+            <li>Reminders the day before so people are home</li>
+            <li>Automatic follow up for leads who go quiet</li>
+            <li>Missed call text back</li>
+          </ul>
+          <div class="svc-more" id="svcMore2"><div><p>Word of mouth is brilliant until it goes quiet. This is a second tap you can turn up or down. Speed wins jobs: the business that replies first usually gets the quote, so our assistant replies in under a minute, day or night. Time wasters are filtered out politely, so you only spend time on real jobs.</p></div></div>
+          <button type="button" class="btn btn-glass glass pill btn-sm more-btn" aria-expanded="false" aria-controls="svcMore2"><span>Read more</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </article>
+        <article class="svc glass lift reveal">
+          <svg class="svc-ic" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20v8a2 2 0 0 0 2 2h5l14 8V10L15 18h-5a2 2 0 0 0-2 2z"/><path d="M15 30l3 10h5l-2.5-9"/><path d="M35 17c2.5 2 2.5 12 0 14M39 13c4.5 4 4.5 18 0 22"/></svg>
+          <h3 class="h3">Running ads</h3>
+          <p class="svc-intro">Facebook and Instagram ads managed properly, with every euro visible to you.</p>
+          <p class="mono plabel">included</p>
+          <ul class="checks">
+            <li>Campaign setup and management</li>
+            <li>3 to 5 new ads a month made from photos and videos you send, no film crew needed</li>
+            <li>Ad copy written for you</li>
+            <li>Weekly checks where weak ads are paused and winners pushed</li>
+            <li>A monthly one page report showing spend, leads, cost per lead and jobs won</li>
+          </ul>
+          <div class="svc-more" id="svcMore3"><div><p>You own your ad account and pay Meta directly on your own card, so there is no markup on ad spend and you see every euro. Ads need 4 to 6 weeks to learn who your best customers are, which is why we work in 3 month blocks. Real phone footage from your jobs, like before and after photos and a 30 second video of you talking about your work, usually beats polished adverts because it looks genuine.</p></div></div>
+          <button type="button" class="btn btn-glass glass pill btn-sm more-btn" aria-expanded="false" aria-controls="svcMore3"><span>Read more</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: pinned lime plate -->
+  <section class="how" id="how" data-pose="how" data-stream data-stream-y=".42" aria-labelledby="howTitle">
+    <div class="how-sticky">
+      <div class="how-plate on-lime" id="howPlate">
+        <div class="how-content" id="howContent">
+          <p class="mono how-label">how it works</p>
+          <h2 class="h2 how-title" id="howTitle">Four steps. <em>Zero</em> chasing.</h2>
+          <ol class="steps" id="steps">
+            <li class="step"><span class="step-num">01</span><p>Ads find homeowners near you.</p></li>
+            <li class="step"><span class="step-num">02</span><p>Every enquiry is texted in a minute.</p></li>
+            <li class="step"><span class="step-num">03</span><p>Good leads book into your calendar.</p></li>
+            <li class="step"><span class="step-num">04</span><p>You turn up, quote and win.</p></li>
+          </ol>
+        </div>
+      </div>
+      <div class="tile how-tile" id="howTile" aria-hidden="true"><svg class="mark"><use href="#mark"/></svg></div>
+    </div>
+  </section>
+
+  <!--
+  ============================================================
+  SAMPLE CONTENT, REPLACE WITH REAL RESULTS BEFORE PUBLISHING
+  The stats and testimonials below are invented for this design
+  preview only. Swap them for real figures and real clients.
+  ============================================================
+  -->
+  <section class="section" id="numbers" data-pose="numbers">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">results</p>
+        <h2 class="h2">Numbers we will <em>not</em> hide</h2>
+      </header>
+      <div class="stats" data-stagger>
+        <article class="stat glass lift reveal">
+          <span class="sample mono">sample</span>
+          <p class="stat-num"><span data-count="1240" data-format="int">1,240</span></p>
+          <p class="mono">enquiries handled for Cork trades</p>
+          <div class="spark" data-values="3,4,4,5,6,5,7,8,7,9,10,12" aria-hidden="true"></div>
+        </article>
+        <article class="stat glass lift reveal" data-stream>
+          <span class="sample mono">sample</span>
+          <p class="stat-num"><span data-count="41">41</span> <small>s</small></p>
+          <p class="mono">average time to first reply</p>
+          <div class="spark" data-values="12,11,10,9,9,8,7,7,6,6,5,5" aria-hidden="true"></div>
+        </article>
+        <article class="stat glass lift reveal">
+          <span class="sample mono">sample</span>
+          <p class="stat-num">€<span data-count="18">18</span></p>
+          <p class="mono">average cost per lead</p>
+          <div class="spark" data-values="11,10,10,9,8,8,7,7,6,6,6,5" aria-hidden="true"></div>
+        </article>
+      </div>
+      <div class="quotes" data-stagger>
+        <figure class="quote glass lift reveal">
+          <span class="sample mono">sample</span>
+          <blockquote><p>We used to lose half our enquiries because I was up a ladder. Now they are booked in before I am back in the van.</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">S</span><span><b>Seán Murphy</b><span class="mono">roofer, ballincollig</span></span></figcaption>
+        </figure>
+        <figure class="quote glass lift reveal">
+          <span class="sample mono">sample</span>
+          <blockquote><p>The site looks better than companies ten times our size, and the quote form actually gets used.</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">C</span><span><b>Clodagh Walsh</b><span class="mono">landscaping, carrigaline</span></span></figcaption>
+        </figure>
+        <figure class="quote glass lift reveal">
+          <span class="sample mono">sample</span>
+          <blockquote><p>I only see the serious ones now. No more driving to Mallow to price a job for someone who was just curious.</p></blockquote>
+          <figcaption><span class="avatar" aria-hidden="true">D</span><span><b>Declan O'Sullivan</b><span class="mono">driveways and paving, midleton</span></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- END SAMPLE CONTENT -->
+
+  <!-- PRICING -->
+  <section class="section" id="pricing" data-pose="pricing">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">pricing</p>
+        <h2 class="h2">Pricing. You pay for <em>results</em>, not hours.</h2>
+        <p class="lead">Clear prices, no surprises. Ad spend goes straight to Meta on your own card.</p>
+      </header>
+
+      <div class="calc glass lg refract reveal">
+        <div class="calc-in">
+          <label class="calc-q" for="spend">What would you spend on ads per day?</label>
+          <p class="calc-val"><span id="spendOut">€25</span> <span class="mono">a day</span></p>
+          <div class="range-wrap" data-stream>
+            <input type="range" id="spend" min="10" max="60" step="1" value="25" aria-describedby="calcNote">
+          </div>
+          <div class="range-scale mono" aria-hidden="true"><span>€10</span><span>€60</span></div>
+          <p class="calc-note" id="calcNote">Below €15 a day Meta cannot learn enough to fill a calendar.</p>
+        </div>
+        <dl class="calc-out" aria-live="polite">
+          <div class="row"><dt class="mono">recommended package</dt><dd id="outPkg">Full Lead System</dd></div>
+          <div class="row"><dt class="mono">meridian fee</dt><dd id="outFee">€900</dd></div>
+          <div class="row"><dt class="mono">monthly ad spend, paid to meta</dt><dd id="outAds">€760</dd></div>
+          <div class="row"><dt class="mono">total per month</dt><dd id="outTotal">€1,660</dd></div>
+          <div class="row row-key"><dt class="mono">first month including setup</dt><dd id="outFirst" class="lime">€1,910</dd></div>
+        </dl>
+      </div>
+
+      <div class="plans-switch">
+        <div class="seg glass pill" role="tablist" aria-label="Plan type">
+          <span class="seg-thumb" aria-hidden="true"></span>
+          <button type="button" role="tab" id="tabWeb" aria-selected="true" aria-controls="plansWeb">Websites</button>
+          <button type="button" role="tab" id="tabLead" aria-selected="false" aria-controls="plansLead" tabindex="-1">Lead generation</button>
+        </div>
+      </div>
+
+      <div class="plans-stack">
+        <div class="plans is-on" id="plansWeb" role="tabpanel" aria-labelledby="tabWeb">
+          <article class="plan glass lift" data-plan="Starter Site">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Starter Site</h3>
+            <p class="price"><span class="amt">€350</span><span class="mono">one off</span></p>
+            <ul class="checks">
+              <li>Single page site</li>
+              <li>Tap to call and WhatsApp buttons</li>
+              <li>Quote form</li>
+              <li>Your photos and reviews</li>
+              <li>Domain connected</li>
+              <li>2 rounds of changes</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Starter Site</button>
+          </article>
+          <article class="plan glass lift" data-plan="Pro Site">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Pro Site</h3>
+            <p class="price"><span class="amt">€750</span><span class="mono">one off</span></p>
+            <ul class="checks">
+              <li>Everything in Starter</li>
+              <li>Up to 5 pages</li>
+              <li>A price estimator or before and after slider</li>
+              <li>Google Business Profile setup</li>
+              <li>Local search pages</li>
+              <li>3 rounds of changes</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Pro Site</button>
+          </article>
+          <article class="plan glass lift" data-plan="Care Plan">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Care Plan</h3>
+            <p class="price"><span class="amt">€50</span><span class="mono">per month</span></p>
+            <ul class="checks">
+              <li>Monthly updates</li>
+              <li>Form and domain checks</li>
+              <li>Priority changes within 48 hours</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Care Plan</button>
+          </article>
+        </div>
+
+        <div class="plans" id="plansLead" role="tabpanel" aria-labelledby="tabLead">
+          <article class="plan glass lift" data-plan="Lead Starter">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Lead Starter</h3>
+            <p class="price"><span class="amt">€400</span><span class="mono">per month, plus ad spend</span></p>
+            <ul class="checks">
+              <li>Ads managed</li>
+              <li>Forms with qualifying questions</li>
+              <li>Leads sent to your phone and email</li>
+              <li>Monthly report</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Lead Starter</button>
+          </article>
+          <article class="plan plan-hot glass lift" data-plan="Full Lead System">
+            <span class="hot-pill mono">most picked</span>
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Full Lead System</h3>
+            <p class="price"><span class="amt">€900</span><span class="mono">per month, plus €250 setup and ad spend</span></p>
+            <ul class="checks">
+              <li>Everything in Lead Starter</li>
+              <li>Landing page</li>
+              <li>AI text assistant</li>
+              <li>Calendar booking and reminders</li>
+              <li>Automatic follow up</li>
+              <li>Missed call text back</li>
+              <li>Live dashboard</li>
+              <li>Monthly results call</li>
+              <li>One client per trade per area</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Full Lead System</button>
+          </article>
+          <article class="plan glass lift" data-plan="Launch Bundle">
+            <span class="plan-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3 class="h4">Launch Bundle</h3>
+            <p class="price"><span class="amt">€1,650</span><span class="mono">plus ad spend</span></p>
+            <ul class="checks">
+              <li>Pro Site</li>
+              <li>3 months of Lead Starter</li>
+              <li>One price, one start date</li>
+            </ul>
+            <button type="button" class="btn btn-glass glass pill plan-btn" aria-pressed="false">Choose Launch Bundle</button>
+          </article>
+        </div>
+      </div>
+      <p class="mono plans-fine">lead generation plans are monthly with a 3 month minimum. ad spend is paid to meta directly.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" data-pose="faq">
+    <div class="wrap wrap-narrow">
+      <header class="sec-head reveal">
+        <p class="eyebrow mono">faq</p>
+        <h2 class="h2">Straight <em>answers</em></h2>
+      </header>
+      <div class="faq glass lg reveal" id="faqList">
+        <div class="qa">
+          <h3><button type="button" id="q1" aria-expanded="false" aria-controls="a1">Do I need to be on social media myself?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a1" role="region" aria-labelledby="q1"><div><p>No. We run the ads from your business page. You just send us photos and short videos from your jobs, and we do the rest.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q2" aria-expanded="false" aria-controls="a2">Who owns the website and ad account?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a2" role="region" aria-labelledby="q2"><div><p>You do. The website, the domain and the ad account are all in your name. If you ever leave, everything stays with you.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q3" aria-expanded="false" aria-controls="a3">How quickly will I get leads?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a3" role="region" aria-labelledby="q3"><div><p>Ads usually start bringing enquiries in the first week. Results sharpen over 4 to 6 weeks as Meta learns who your best customers are.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q4" aria-expanded="false" aria-controls="a4">What if the leads are rubbish?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a4" role="region" aria-labelledby="q4"><div><p>Every lead is checked for area, budget and timeline before it reaches you, and we tighten the filters every week based on what you tell us.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q5" aria-expanded="false" aria-controls="a5">Why a 3 month minimum?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a5" role="region" aria-labelledby="q5"><div><p>Ads need time to learn. The first 4 to 6 weeks are when Meta works out who actually books, so 3 months gives you a fair test and real numbers to judge us on.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q6" aria-expanded="false" aria-controls="a6">Do you film content?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a6" role="region" aria-labelledby="q6"><div><p>No. You send phone photos and videos using our simple shot list. Real footage from your jobs usually beats polished adverts because it looks genuine.</p></div></div>
+        </div>
+        <div class="qa">
+          <h3><button type="button" id="q7" aria-expanded="false" aria-controls="a7">What does it cost to keep a website running?<span class="plus" aria-hidden="true"></span></button></h3>
+          <div class="ans" id="a7" role="region" aria-labelledby="q7"><div><p>Hosting is free. A domain is about €15 to €20 a year. The optional Care Plan is €50 a month if you want us to look after updates for you.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CALL TO ACTION -->
+  <section class="section section-cta" id="contact" data-pose="contact">
+    <div class="wrap">
+      <div class="cta-grid" data-stagger>
+        <div class="cta-dark glass lg lift reveal">
+          <span class="tile tile-lg"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span>
+          <p class="cta-dark-line">Websites, ads and booking for trades in Cork.</p>
+          <p class="mono">meridian labs / cork, ireland</p>
+        </div>
+        <div class="cta-lime on-lime reveal">
+          <h2 class="h2 dark">Pick the job you want <em>more</em> of.</h2>
+          <p>Tell us your trade and town. We will send a free preview of your site or a plan for your area within a day.</p>
+          <form class="quick" id="quickForm" action="https://formspree.io/f/xlgvegzy" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Callback request from the Meridian Labs site">
+            <input type="hidden" name="form" value="quick callback">
+            <label class="sr-only" for="qPhone">Your phone number</label>
+            <input id="qPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Your phone number" required>
+            <button type="submit" class="btn btn-black" id="quickSend" data-stream data-stream-end>Send</button>
+          </form>
+          <p class="quick-msg" id="quickMsg" role="status" aria-live="polite"></p>
+          <p class="quick-fine">We only use your number to reply to this enquiry.</p>
+        </div>
+      </div>
+
+      <form class="contact glass lg reveal" id="contactForm" action="https://formspree.io/f/xlgvegzy" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New enquiry from the Meridian Labs site">
+        <div class="contact-head">
+          <h2 class="h3">Or tell us a bit <em>more</em></h2>
+          <p class="mono">replies within one working day</p>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <label for="fName">Name</label>
+            <input id="fName" name="name" type="text" autocomplete="name" required>
+            <p class="err mono" id="fNameErr"></p>
+          </div>
+          <div class="field">
+            <label for="fPhone">Phone</label>
+            <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <p class="err mono" id="fPhoneErr"></p>
+          </div>
+          <div class="field">
+            <label for="fTrade">Business or trade</label>
+            <input id="fTrade" name="trade" type="text" autocomplete="organization" required>
+            <p class="err mono" id="fTradeErr"></p>
+          </div>
+          <div class="field">
+            <label for="fTown">Town</label>
+            <input id="fTown" name="town" type="text" autocomplete="address-level2" required>
+            <p class="err mono" id="fTownErr"></p>
+          </div>
+          <div class="field field-wide">
+            <label for="fInterest">Interested in</label>
+            <div class="select-wrap">
+              <select id="fInterest" name="interested_in">
+                <option value="Not sure yet">Not sure yet</option>
+                <option value="Starter Site">Starter Site, €350</option>
+                <option value="Pro Site">Pro Site, €750</option>
+                <option value="Care Plan">Care Plan, €50 a month</option>
+                <option value="Lead Starter">Lead Starter, €400 a month</option>
+                <option value="Full Lead System">Full Lead System, €900 a month</option>
+                <option value="Launch Bundle">Launch Bundle, €1,650</option>
+              </select>
+            </div>
+          </div>
+          <div class="field field-wide">
+            <label for="fMsg">Message</label>
+            <textarea id="fMsg" name="message" rows="4" placeholder="What kind of jobs do you want more of?"></textarea>
+          </div>
+          <div class="field field-wide check-field">
+            <input id="fConsent" name="consent" type="checkbox" value="yes" required>
+            <label for="fConsent">I am happy for Meridian Labs to contact me by phone, text or WhatsApp about this enquiry.</label>
+            <p class="err mono" id="fConsentErr"></p>
+          </div>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn btn-lime submit-btn" id="submitBtn">
+            <span class="submit-label">Send enquiry</span>
+            <svg class="submit-check" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+          </button>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot glass lg">
+      <div class="foot-brand">
+        <a href="#top" class="brand" aria-label="Meridian Labs, back to top"><span class="tile tile-sm"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg></span><span class="brand-name">Meridian Labs</span></a>
+        <p>Meridian Labs, Cork, Ireland</p>
+        <!-- PLACEHOLDERS: replace [NUMBER] with your WhatsApp number in international format, and [EMAIL] with your email -->
+        <p class="foot-contact"><a href="https://wa.me/[NUMBER]">WhatsApp us</a><a href="mailto:[EMAIL]">[EMAIL]</a></p>
+      </div>
+      <nav class="foot-col" aria-label="Services">
+        <p class="mono">services</p>
+        <a href="#services">Web design</a>
+        <a href="#services">Lead generation</a>
+        <a href="#services">Running ads</a>
+      </nav>
+      <nav class="foot-col" aria-label="Company">
+        <p class="mono">company</p>
+        <a href="#reliable">About</a>
+        <a href="#numbers">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <nav class="foot-col" aria-label="Legal">
+        <p class="mono">legal</p>
+        <a href="#privacy">Privacy</a>
+        <a href="#cookies">Cookies</a>
+      </nav>
+      <p class="mono foot-copy">© 2026 Meridian Labs</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Video modal -->
+<dialog class="modal glass lg" id="videoModal" aria-labelledby="videoTitle">
+  <div class="modal-in">
+    <div class="modal-head">
+      <h2 class="h4" id="videoTitle">How Meridian works, in 2 minutes</h2>
+      <button type="button" class="icon-btn glass pill" data-close aria-label="Close video">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <!-- VIDEO PLACEHOLDER: replace this block with your embed, for example an iframe pointing at [VIDEO LINK] -->
+    <div class="video-ph">
+      <svg class="ic play-big" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5v7l5.5-3.5z"/></svg>
+      <p class="mono">[VIDEO LINK]</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+/* Meridian Labs, site script */
+(() => {
+  'use strict';
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const root = document.documentElement;
+  const reduce = root.classList.contains('reduce');
+  const isTouch = matchMedia('(hover: none)').matches;
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const seg = (p, a, b) => clamp((p - a) / (b - a), 0, 1);
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  const easeInOut = t => (t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+  const easeBack = t => { const c = 1.2; return 1 + (c + 1) * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2); };
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  const NS = 'http://www.w3.org/2000/svg';
+  const svgEl = (tag, attrs = {}) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+
+  let vw = innerWidth, vh = innerHeight;
+  const scrollFns = [];
+  const resizeFns = [];
+  let ticking = false;
+  const runScroll = () => { ticking = false; scrollFns.forEach(f => f()); };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(runScroll); } }, { passive: true });
+  let rzTimer;
+  addEventListener('resize', () => {
+    clearTimeout(rzTimer);
+    rzTimer = setTimeout(() => { const pw = vw; vw = innerWidth; vh = innerHeight; resizeFns.forEach(f => f(pw !== vw)); runScroll(); }, 120);
+  });
+
+  /* ---------------- Smooth scrolling helpers ---------------- */
+
+  function navBottom() { const n = $('#nav'); return n ? n.getBoundingClientRect().bottom : 76; }
+
+  function targetY(el) {
+    if (!el) return 0;
+    const r = el.getBoundingClientRect();
+    let y = r.top + scrollY;
+    if (el.id === 'how') return y + (el.offsetHeight - vh) * .36;
+    if (el.classList.contains('section')) {
+      const pad = parseFloat(getComputedStyle(el).paddingTop) || 0;
+      return Math.max(0, y + pad - navBottom() - 36);
+    }
+    return Math.max(0, y - navBottom() - 20);
+  }
+
+  function scrollToEl(el) { scrollTo({ top: targetY(el), behavior: reduce ? 'auto' : 'smooth' }); }
+
+  function focusAfterScroll(el) {
+    let done = false;
+    const f = () => { if (done) return; done = true; el.focus({ preventScroll: true }); };
+    if ('onscrollend' in window) addEventListener('scrollend', f, { once: true });
+    setTimeout(f, reduce ? 30 : 1200);
+  }
+
+  function goContact() {
+    const phone = $('#qPhone');
+    scrollToEl($('#contact'));
+    focusAfterScroll(phone);
+  }
+
+  /* ---------------- Navigation ---------------- */
+
+  function nav() {
+    const btn = $('#menuBtn'), sheet = $('#menuSheet');
+    const setMenu = open => {
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      sheet.classList.toggle('open', open);
+    };
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      setMenu(open);
+      if (open) setTimeout(() => sheet.querySelector('a').focus({ preventScroll: true }), 60);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && sheet.classList.contains('open')) { setMenu(false); btn.focus(); }
+    });
+    document.addEventListener('click', e => {
+      if (sheet.classList.contains('open') && !sheet.contains(e.target) && !btn.contains(e.target)) setMenu(false);
+    });
+
+    document.addEventListener('click', e => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      const id = a.getAttribute('href').slice(1);
+      if (a.hasAttribute('data-book')) { e.preventDefault(); setMenu(false); goContact(); return; }
+      const t = id === 'top' ? null : document.getElementById(id);
+      if (id !== 'top' && !t) return;
+      e.preventDefault();
+      setMenu(false);
+      scrollToEl(t);
+    });
+
+    let openedAt = 0;
+    btn.addEventListener('click', () => { openedAt = scrollY; });
+    scrollFns.push(() => { if (sheet.classList.contains('open') && Math.abs(scrollY - openedAt) > 60) setMenu(false); });
+
+    const ids = ['services', 'how', 'tuesday', 'pricing', 'faq'];
+    const secs = ids.map(id => document.getElementById(id));
+    const links = $$('.nav-links a, .menu-sheet nav a');
+    let current = null;
+    scrollFns.push(() => {
+      const line = vh * .42;
+      let act = null;
+      secs.forEach((s, i) => { const r = s.getBoundingClientRect(); if (r.top <= line && r.bottom > line) act = ids[i]; });
+      if (act === current) return;
+      current = act;
+      links.forEach(a => {
+        const on = a.getAttribute('href') === '#' + act;
+        a.classList.toggle('is-active', on);
+        if (on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+      });
+    });
+  }
+
+  /* ---------------- Reveal, counters ---------------- */
+
+  function countUp(el) {
+    if (el.dataset.counted) return;
+    el.dataset.counted = '1';
+    const to = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0);
+    const fmt = v => v.toLocaleString('en-IE', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+    if (reduce) { el.textContent = fmt(to); return; }
+    const host = el.closest('.reveal');
+    const delay = host ? parseFloat(host.style.getPropertyValue('--d')) || 0 : 0;
+    const t0 = performance.now() + delay + 180, dur = 1500;
+    el.textContent = fmt(0);
+    const step = now => {
+      const p = clamp((now - t0) / dur, 0, 1);
+      el.textContent = fmt(to * easeOut(p));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  function fire(el) {
+    $$('[data-count]', el).forEach(c => { if (c.closest('.reveal') === el) countUp(c); });
+    el.dispatchEvent(new CustomEvent('reveal'));
+  }
+
+  function reveals() {
+    $$('[data-stagger]').forEach(g => {
+      $$(':scope > .reveal', g).forEach((el, i) => el.style.setProperty('--d', i * 80 + 'ms'));
+    });
+    const items = $$('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) { items.forEach(el => { el.classList.add('in'); fire(el); }); return; }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        io.unobserve(el);
+        el.classList.add('in');
+        fire(el);
+        setTimeout(() => el.style.removeProperty('--d'), 1400);
+      });
+    }, { threshold: .12, rootMargin: '0px 0px -6% 0px' });
+    items.forEach(el => io.observe(el));
+  }
+
+  /* ---------------- Glass: sheen and refraction ---------------- */
+
+  function glassFX() {
+    if (!isTouch) {
+      let last = null;
+      document.addEventListener('pointermove', e => {
+        const g = e.target.closest ? e.target.closest('.glass') : null;
+        if (last && last !== g) last.classList.remove('is-lit');
+        if (g) {
+          const r = g.getBoundingClientRect();
+          g.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+          g.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+          g.classList.add('is-lit');
+        }
+        last = g;
+      }, { passive: true });
+    }
+    // Edge refraction relies on SVG filters inside backdrop-filter, which only Chromium renders.
+    if (window.chrome && !reduce) {
+      $$('.glass.refract').forEach(g => {
+        g.classList.add('has-layers');
+        g.insertAdjacentHTML('afterbegin', '<span class="g-bg" aria-hidden="true"></span><span class="g-edge" aria-hidden="true"></span>');
+      });
+    }
+  }
+
+  /* ---------------- Loader ---------------- */
+
+  function loader(done) {
+    const el = $('#loader');
+    let started = false;
+    const start = () => { if (!started) { started = true; done(); } };
+    if (reduce || !el || !root.classList.contains('loading')) {
+      if (el) el.remove();
+      root.classList.remove('loading');
+      start();
+      return;
+    }
+    const plate = $('#loaderPlate'), tile = $('#loaderTile'), line = $('#loaderLine'), copy = $('#loaderCopy'), navTile = $('#navTile');
+    const words = line.textContent.trim().split(/\s+/);
+    line.innerHTML = words.map(w => `<span class="w">${w}</span>`).join(' ');
+    const spans = $$('.w', line);
+    const timers = [];
+    const T = (fn, ms) => timers.push(setTimeout(fn, ms));
+    let finished = false;
+
+    spans.forEach((s, i) => T(() => s.classList.add('on'), 160 + i * 92));
+    const tShrink = 160 + spans.length * 92 + 240;
+
+    T(() => {
+      copy.animate([{ opacity: 1 }, { opacity: 0, filter: 'blur(6px)' }], { duration: 200, fill: 'forwards' });
+      const r = tile.getBoundingClientRect();
+      plate.animate([
+        { clipPath: 'inset(0px 0px 0px 0px round 0px)' },
+        { clipPath: `inset(${r.top}px ${innerWidth - r.right}px ${innerHeight - r.bottom}px ${r.left}px round ${r.width * .28}px)` }
+      ], { duration: 480, easing: 'cubic-bezier(.7,0,.2,1)', fill: 'forwards' });
+      tile.classList.add('to-lime');
+      start();
+    }, tShrink);
+
+    T(() => {
+      plate.style.visibility = 'hidden';
+      const a = tile.getBoundingClientRect(), b = navTile.getBoundingClientRect();
+      const dx = (b.left + b.width / 2) - (a.left + a.width / 2);
+      const dy = (b.top + b.height / 2) - (a.top + a.height / 2);
+      const an = tile.animate([
+        { transform: 'none' },
+        { transform: `translate(${dx}px, ${dy}px) scale(${b.width / a.width})` }
+      ], { duration: 460, easing: 'cubic-bezier(.65,0,.25,1)', fill: 'forwards' });
+      an.onfinish = finish;
+    }, tShrink + 500);
+
+    T(finish, 3000); // safety net
+
+    function finish() {
+      if (finished) return;
+      finished = true;
+      timers.forEach(clearTimeout);
+      removeEventListener('keydown', skip);
+      root.classList.remove('loading');
+      start();
+      const fade = el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 220, fill: 'forwards' });
+      fade.onfinish = () => el.remove();
+      runScroll();
+    }
+    function skip() { if (!finished) finish(); }
+    addEventListener('keydown', skip);
+    el.addEventListener('pointerdown', skip);
+  }
+
+  /* ---------------- Hero: tilt, flow diagram, modal ---------------- */
+
+  function heroTilt() {
+    const hero = $('.hero'), tilt = $('#tilt');
+    if (isTouch || reduce || !hero) return;
+    hero.addEventListener('pointermove', e => {
+      if (innerWidth < 1000) return;
+      const nx = e.clientX / innerWidth - .5, ny = e.clientY / innerHeight - .5;
+      tilt.style.setProperty('--ry', (-9 + nx * 10).toFixed(2) + 'deg');
+      tilt.style.setProperty('--rx', (5 - ny * 8).toFixed(2) + 'deg');
+    });
+    hero.addEventListener('pointerleave', () => { tilt.style.removeProperty('--ry'); tilt.style.removeProperty('--rx'); });
+  }
+
+  const flowCtl = { start() {} };
+
+  function flow() {
+    const box = $('#flow'), svg = $('#flowLines'), tip = $('#flowTip');
+    if (!box) return;
+    const node = id => box.querySelector(`[data-node="${id}"]`);
+    const defs = { e12: ['n1', 'n2', 'v'], e23: ['n2', 'n3', 'h'], e34: ['n3', 'n4', 'v'], e45: ['n4', 'n5', 'v'], e26: ['n2', 'n6', 'v'] };
+    const E = {};
+    let pulse;
+
+    const box4 = el => ({ l: el.offsetLeft, t: el.offsetTop, w: el.offsetWidth, h: el.offsetHeight });
+
+    function build() {
+      svg.innerHTML = '';
+      const W = box.offsetWidth, H = box.offsetHeight;
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      for (const k in defs) {
+        const [a, b, kind] = defs[k];
+        const A = box4(node(a)), B = box4(node(b));
+        let d;
+        if (kind === 'v') {
+          const x1 = A.l + A.w / 2, y1 = A.t + A.h, x2 = B.l + B.w / 2, y2 = B.t, m = (y2 - y1) / 2;
+          d = `M${x1},${y1} C${x1},${y1 + m} ${x2},${y2 - m} ${x2},${y2}`;
+        } else {
+          const x1 = A.l + A.w, y1 = A.t + A.h / 2, x2 = B.l, y2 = B.t + B.h / 2, m = (x2 - x1) / 2;
+          d = `M${x1},${y1} C${x1 + m},${y1} ${x2 - m},${y2} ${x2},${y2}`;
+        }
+        const base = svgEl('path', { d, class: 'e-base' });
+        const lit = svgEl('path', { d, class: 'e-lit' });
+        svg.append(base, lit);
+        const len = lit.getTotalLength();
+        const prev = E[k];
+        const frac = prev ? prev.frac : 0;
+        lit.style.strokeDasharray = `${len} ${len}`;
+        lit.style.strokeDashoffset = len * (1 - frac);
+        E[k] = { lit, len, frac };
+      }
+      const g = svgEl('g', { opacity: 0 });
+      g.append(svgEl('circle', { r: 9, class: 'p-halo' }), svgEl('circle', { r: 3.5, class: 'p-core' }));
+      svg.append(g);
+      pulse = g;
+      const mid = k => E[k].lit.getPointAtLength(E[k].len * .5);
+      const py = mid('e23'), pn = mid('e26');
+      Object.assign($('#branchYes').style, { left: py.x + 'px', top: py.y + 'px' });
+      Object.assign($('#branchNo').style, { left: (pn.x + 22) + 'px', top: pn.y + 'px' });
+    }
+
+    const setLit = (k, f) => { const e = E[k]; e.frac = f; e.lit.style.strokeDashoffset = e.len * (1 - f); };
+
+    build();
+    if ('ResizeObserver' in window) new ResizeObserver(() => build()).observe(box);
+    if (document.fonts) document.fonts.ready.then(build);
+
+    // tooltips
+    let openNode = null;
+    const hideTip = () => { tip.classList.remove('show'); openNode && openNode.setAttribute('aria-expanded', 'false'); openNode = null; };
+    $$('.node', box).forEach(n => {
+      n.setAttribute('aria-expanded', 'false');
+      n.addEventListener('click', e => {
+        e.stopPropagation();
+        if (openNode === n) { hideTip(); return; }
+        hideTip();
+        openNode = n;
+        n.setAttribute('aria-expanded', 'true');
+        tip.textContent = n.dataset.tip;
+        const W = box.offsetWidth, H = box.offsetHeight;
+        tip.style.left = '0px'; tip.style.top = '0px';
+        const tw = Math.min(250, W - 8);
+        tip.style.maxWidth = tw + 'px';
+        const th = tip.offsetHeight;
+        const left = clamp(n.offsetLeft, 0, W - tip.offsetWidth);
+        let top = n.offsetTop + n.offsetHeight + 8;
+        if (top + th > H + 40) top = n.offsetTop - th - 8;
+        tip.style.left = left + 'px';
+        tip.style.top = top + 'px';
+        requestAnimationFrame(() => tip.classList.add('show'));
+      });
+    });
+    document.addEventListener('click', e => { if (openNode && !tip.contains(e.target)) hideTip(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && openNode) { const n = openNode; hideTip(); n.focus(); } });
+
+    const nodes = $$('.node', box);
+    const state = (id, cls) => { const n = node(id); n.classList.remove('is-active', 'is-done'); if (cls) n.classList.add(cls); };
+
+    if (reduce) {
+      ['n1', 'n2', 'n3', 'n4', 'n5'].forEach(id => state(id, 'is-done'));
+      ['e12', 'e23', 'e34', 'e45'].forEach(k => setLit(k, 1));
+      return;
+    }
+
+    let visible = false, wake = null;
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible && wake) { wake(); wake = null; } }).observe(box);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden && visible && wake) { wake(); wake = null; } });
+    const ready = () => (visible && !document.hidden) ? Promise.resolve() : new Promise(r => { wake = r; });
+
+    function travel(k, dur = 820) {
+      return ready().then(() => new Promise(res => {
+        const t0 = performance.now();
+        pulse.setAttribute('opacity', 1);
+        const f = now => {
+          const p = clamp((now - t0) / dur, 0, 1), e = easeInOut(p);
+          const edge = E[k];
+          setLit(k, e);
+          const pt = edge.lit.getPointAtLength(edge.len * e);
+          pulse.setAttribute('transform', `translate(${pt.x},${pt.y})`);
+          if (p < 1) requestAnimationFrame(f); else { pulse.setAttribute('opacity', 0); res(); }
+        };
+        requestAnimationFrame(f);
+      }));
+    }
+    async function step(id, hold) { await ready(); state(id, 'is-active'); await wait(hold); state(id, 'is-done'); }
+
+    async function loop() {
+      let cycle = 0;
+      for (;;) {
+        await ready();
+        nodes.forEach(n => n.classList.remove('is-active', 'is-done'));
+        Object.keys(E).forEach(k => setLit(k, 0));
+        await wait(420);
+        await step('n1', 520);
+        await travel('e12');
+        await step('n2', 640);
+        if (cycle % 3 === 2) {
+          await travel('e26');
+          await step('n6', 900);
+        } else {
+          await travel('e23');
+          await step('n3', 520);
+          await travel('e34');
+          await step('n4', 520);
+          await travel('e45');
+          state('n5', 'is-active');
+          await wait(1100);
+          state('n5', 'is-done');
+        }
+        await wait(1700);
+        cycle++;
+      }
+    }
+    let begun = false;
+    flowCtl.start = () => { if (!begun) { begun = true; loop(); } };
+  }
+
+  function modal() {
+    const dlg = $('#videoModal'), open = $('#openVideo');
+    if (!dlg || !open) return;
+    const close = () => { if (dlg.open) dlg.close(); };
+    open.addEventListener('click', () => {
+      if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+    });
+    dlg.addEventListener('click', e => { if (e.target === dlg) close(); });
+    $$('[data-close]', dlg).forEach(b => b.addEventListener('click', close));
+    dlg.addEventListener('close', () => open.focus());
+  }
+
+  /* ---------------- Charts ---------------- */
+
+  function smoothPath(pts) {
+    let d = `M${pts[0][0]},${pts[0][1]}`;
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+      const c1 = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6];
+      const c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
+      d += ` C${c1[0].toFixed(2)},${c1[1].toFixed(2)} ${c2[0].toFixed(2)},${c2[1].toFixed(2)} ${p2[0].toFixed(2)},${p2[1].toFixed(2)}`;
+    }
+    return d;
+  }
+
+  function dashboard() {
+    // week grid
+    const w = $('#week');
+    if (w) {
+      const vals = w.dataset.values.split(',').map(Number), today = +w.dataset.today;
+      const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+      w.innerHTML = vals.map((v, i) => {
+        const cells = Array.from({ length: 10 }, (_, k) => `<i class="cell${k < v ? ' on' : ''}" style="transition-delay:${300 + i * 70 + k * 40}ms"></i>`).join('');
+        return `<div class="col${i === today ? ' today' : ''}${i > today ? ' future' : ''}"><div class="cells">${cells}</div><span class="day">${days[i]}</span></div>`;
+      }).join('');
+    }
+    // ring
+    const ring = $('#ring');
+    if (ring) {
+      const host = ring.closest('.reveal');
+      const fill = () => { $('.ring-fg', ring).style.strokeDasharray = `${ring.dataset.value} 100`; };
+      host.addEventListener('reveal', fill);
+    }
+    // cost per lead line
+    const svg = $('#cplChart');
+    if (svg) {
+      const data = [20.5, 20.9, 20.1, 19.8, 20.4, 19.6, 19.2, 19.5, 18.9, 18.6, 19.0, 18.4, 18.1, 18.5, 18.0, 17.8, 18.2, 17.6, 17.9, 17.4];
+      const W = 300, H = 110, lo = 16.8, hi = 21.4;
+      const pts = data.map((v, i) => [i / (data.length - 1) * W, H - (v - lo) / (hi - lo) * H]);
+      const d = smoothPath(pts);
+      svg.innerHTML = `<defs><linearGradient id="cplFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4F824" stop-opacity=".28"/><stop offset="1" stop-color="#E4F824" stop-opacity="0"/></linearGradient></defs>
+        <line class="grid" x1="0" y1="${H * .2}" x2="${W}" y2="${H * .2}"/><line class="grid" x1="0" y1="${H * .55}" x2="${W}" y2="${H * .55}"/><line class="grid" x1="0" y1="${H}" x2="${W}" y2="${H}"/>
+        <path class="area" d="${d} L${W},${H} L0,${H} Z"/>
+        <path class="ln" pathLength="1" d="${d}"/>`;
+    }
+    // sparklines
+    $$('.spark').forEach(s => {
+      const v = s.dataset.values.split(',').map(Number), m = Math.max(...v);
+      s.innerHTML = v.map((x, i) => `<i style="height:${(x / m * 100).toFixed(1)}%;transition-delay:${300 + i * 45}ms"></i>`).join('');
+    });
+  }
+
+  function iso() {
+    const svg = $('#iso');
+    if (!svg) return;
+    const vals = [14, 17, 15, 21, 19, 24, 22, 27, 26, 31, 29, 36];
+    const max = 36, u = 24, g = 1.3, w = .92, Hmax = 4.4;
+    const P = (x, y, z) => [(x - y) * .866 * u, (x + y) * .5 * u - z * u];
+    // bounds for the fully risen chart
+    const xs = [], ys = [];
+    vals.forEach((v, i) => {
+      const y0 = -i * g, h = v / max * Hmax;
+      [[0, y0, 0], [w, y0, 0], [w, y0 + w, 0], [0, y0 + w, 0], [0, y0, h], [w, y0, h], [w, y0 + w, h], [0, y0 + w, h]].forEach(c => { const p = P(...c); xs.push(p[0]); ys.push(p[1]); });
+    });
+    const pad = 26;
+    const minX = Math.min(...xs) - pad, maxX = Math.max(...xs) + pad, minY = Math.min(...ys) - pad, maxY = Math.max(...ys) + pad + 14;
+    svg.setAttribute('viewBox', `${minX.toFixed(1)} ${minY.toFixed(1)} ${(maxX - minX).toFixed(1)} ${(maxY - minY).toFixed(1)}`);
+
+    const blocks = vals.map((v, i) => {
+      const grp = svgEl('g');
+      const left = svgEl('polygon'), right = svgEl('polygon'), top = svgEl('polygon');
+      const last = i === vals.length - 1;
+      left.setAttribute('fill', last ? '#8E9A17' : 'rgba(255,255,255,.075)');
+      right.setAttribute('fill', last ? '#5F680F' : 'rgba(255,255,255,.035)');
+      top.setAttribute('fill', last ? '#E4F824' : 'rgba(255,255,255,.16)');
+      [left, right, top].forEach(p => { p.setAttribute('stroke', last ? 'rgba(228,248,36,.9)' : 'rgba(255,255,255,.2)'); p.setAttribute('stroke-width', '.8'); p.setAttribute('stroke-linejoin', 'round'); });
+      grp.append(left, right, top);
+      if (i % 2 === 1 || last) {
+        const lp = P(w, -i * g + w, 0);
+        const t = svgEl('text', { x: lp[0].toFixed(1), y: (lp[1] + 16).toFixed(1), 'text-anchor': 'middle' });
+        t.textContent = 'w' + (i + 1);
+        grp.append(t);
+      }
+      return { grp, left, right, top, i, h: v / max * Hmax, last };
+    });
+    const label = svgEl('text', { 'text-anchor': 'middle', fill: '#E4F824', style: 'fill:#E4F824;font-size:13px' });
+    label.textContent = String(vals[vals.length - 1]);
+    // back to front
+    blocks.slice().reverse().forEach(b => svg.append(b.grp));
+    svg.append(label);
+
+    const pts = a => a.map(c => P(...c).map(n => n.toFixed(1)).join(',')).join(' ');
+    function draw(prog) {
+      blocks.forEach(b => {
+        const y0 = -b.i * g;
+        const h = Math.max(.02, b.h * prog(b.i));
+        b.top.setAttribute('points', pts([[0, y0, h], [w, y0, h], [w, y0 + w, h], [0, y0 + w, h]]));
+        b.left.setAttribute('points', pts([[0, y0 + w, 0], [w, y0 + w, 0], [w, y0 + w, h], [0, y0 + w, h]]));
+        b.right.setAttribute('points', pts([[w, y0, 0], [w, y0 + w, 0], [w, y0 + w, h], [w, y0, h]]));
+        if (b.last) {
+          const lp = P(w / 2, y0 + w / 2, h);
+          label.setAttribute('x', lp[0].toFixed(1));
+          label.setAttribute('y', (lp[1] - 14).toFixed(1));
+          label.setAttribute('opacity', prog(b.i) > .6 ? 1 : 0);
+        }
+      });
+    }
+    if (reduce) { draw(() => 1); return; }
+    draw(() => 0);
+    svg.closest('.reveal').addEventListener('reveal', () => {
+      const t0 = performance.now() + 250;
+      const f = now => {
+        const el = now - t0;
+        draw(i => easeBack(clamp((el - i * 70) / 750, 0, 1)));
+        if (el < 750 + vals.length * 70) requestAnimationFrame(f);
+      };
+      requestAnimationFrame(f);
+    });
+  }
+
+  function whatsapp() {
+    const wa = $('#wa');
+    if (!wa) return;
+    const note = $('#waNote'), confirm = $('#waConfirm'), call = $('#waCall');
+    if (reduce) wa.classList.add('is-sent');
+    else wa.addEventListener('reveal', () => {
+      setTimeout(() => wa.classList.add('is-typing'), 500);
+      setTimeout(() => { wa.classList.remove('is-typing'); wa.classList.add('is-sent'); }, 2100);
+    });
+    confirm.addEventListener('click', () => {
+      confirm.classList.add('is-done');
+      confirm.textContent = 'Confirmed';
+      note.textContent = 'aoife gets a confirmation text straight away. example only.';
+    });
+    call.addEventListener('click', () => { note.textContent = 'this would ring aoife from whatsapp. example only.'; });
+  }
+
+  /* ---------------- Services ---------------- */
+
+  function services() {
+    const cards = $$('.svc');
+    cards.forEach(card => {
+      const b = $('.more-btn', card);
+      b.addEventListener('click', () => {
+        const open = !card.classList.contains('is-open');
+        cards.forEach(c => {
+          c.classList.remove('is-open');
+          const cb = $('.more-btn', c);
+          cb.setAttribute('aria-expanded', 'false');
+          $('span', cb).textContent = 'Read more';
+        });
+        if (open) {
+          card.classList.add('is-open');
+          b.setAttribute('aria-expanded', 'true');
+          $('span', b).textContent = 'Show less';
+        }
+      });
+    });
+  }
+
+  /* ---------------- How it works: lime plate ---------------- */
+
+  const plateState = { covered: false };
+
+  function how() {
+    const sec = $('#how');
+    if (!sec) return;
+    const nav = $('#nav');
+    const plate = $('#howPlate'), tile = $('#howTile'), content = $('#howContent'), steps = $$('.step', sec), mark = $('.mark', tile);
+    if (reduce) { sec.classList.add('is-static'); steps.forEach(s => s.classList.add('on')); return; }
+    function update() {
+      const r = sec.getBoundingClientRect();
+      if (r.bottom < -50 || r.top > vh + 50) { plateState.covered = false; nav.classList.remove('on-plate'); return; }
+      const total = Math.max(1, r.height - vh);
+      const p = clamp(-r.top / total, 0, 1);
+      const W = sec.clientWidth, H = vh;
+      const ts = clamp(Math.min(W, H) * .16, 76, 120);
+      const appear = easeOut(seg(p, 0, .1));
+      const open = easeInOut(seg(p, .1, .24)) * (1 - easeInOut(seg(p, .8, .92)));
+      const fade = seg(p, .92, 1);
+      const m = W < 700 ? 10 : 18;
+      const ti = lerp((H - ts) / 2, m, open), li = lerp((W - ts) / 2, m, open);
+      const R = lerp(ts * .28, 28, open);
+      plate.style.clipPath = `inset(${ti.toFixed(1)}px ${li.toFixed(1)}px ${ti.toFixed(1)}px ${li.toFixed(1)}px round ${R.toFixed(1)}px)`;
+      plate.style.visibility = open > .001 ? 'visible' : 'hidden';
+      const tileVis = appear * (1 - fade) * (1 - seg(open, .25, .55));
+      tile.style.width = ts + 'px';
+      tile.style.opacity = tileVis.toFixed(3);
+      tile.style.transform = `translate(-50%, -50%) scale(${(lerp(.6, 1, appear) * lerp(1, .8, fade)).toFixed(3)})`;
+      mark.style.opacity = (1 - seg(open, 0, .3)).toFixed(3);
+      const c = seg(open, .55, 1);
+      content.style.opacity = c.toFixed(3);
+      content.style.transform = `scale(${lerp(.96, 1, c).toFixed(3)})`;
+      const sp = seg(p, .27, .74) * 4;
+      steps.forEach((s, i) => s.classList.toggle('on', sp > i + .12));
+      plateState.covered = open > .995;
+      nav.classList.toggle('on-plate', open > .3);
+    }
+    scrollFns.push(update);
+    resizeFns.push(update);
+    update();
+  }
+
+  /* ---------------- Pricing ---------------- */
+
+  const eur = v => '€' + Math.round(v).toLocaleString('en-IE');
+
+  function pricing() {
+    const range = $('#spend');
+    if (!range) return;
+    const out = $('#spendOut'), note = $('#calcNote');
+    const els = { pkg: $('#outPkg'), fee: $('#outFee'), ads: $('#outAds'), total: $('#outTotal'), first: $('#outFirst') };
+    const cur = { fee: 900, ads: 760, total: 1660, first: 1910 };
+    const raf = {};
+    const bump = el => { el.classList.remove('roll'); void el.offsetWidth; el.classList.add('roll'); };
+    function tween(k, to) {
+      const el = els[k], from = cur[k];
+      cur[k] = to;
+      cancelAnimationFrame(raf[k]);
+      if (reduce || from === to) { el.textContent = eur(to); return; }
+      const t0 = performance.now(), dur = 480;
+      const f = now => {
+        const p = clamp((now - t0) / dur, 0, 1);
+        el.textContent = eur(lerp(from, to, easeOut(p)));
+        if (p < 1) raf[k] = requestAnimationFrame(f);
+      };
+      raf[k] = requestAnimationFrame(f);
+    }
+    function update() {
+      const d = +range.value;
+      const frac = (d - +range.min) / (+range.max - +range.min);
+      range.style.setProperty('--p', `calc(${frac.toFixed(4)} * (100% - 30px) + 15px)`);
+      range.setAttribute('aria-valuetext', `€${d} a day`);
+      out.textContent = '€' + d;
+      const full = d >= 15;
+      note.hidden = full;
+      const fee = full ? 900 : 400, setup = full ? 250 : 0, ads = Math.round(d * 30.4);
+      const name = full ? 'Full Lead System' : 'Lead Starter';
+      if (els.pkg.textContent !== name) { els.pkg.textContent = name; if (!reduce) bump(els.pkg); }
+      tween('fee', fee); tween('ads', ads); tween('total', fee + ads); tween('first', fee + ads + setup);
+    }
+    range.addEventListener('input', update);
+    update();
+
+    // plan type toggle
+    const tabs = [$('#tabWeb'), $('#tabLead')], panels = [$('#plansWeb'), $('#plansLead')], thumb = $('.seg-thumb');
+    const moveThumb = () => {
+      const t = tabs.find(x => x.getAttribute('aria-selected') === 'true');
+      thumb.style.width = t.offsetWidth + 'px';
+      thumb.style.transform = `translateX(${t.offsetLeft - 5}px)`;
+    };
+    const select = (i, focus) => {
+      tabs.forEach((t, k) => { t.setAttribute('aria-selected', String(k === i)); t.tabIndex = k === i ? 0 : -1; });
+      panels.forEach((p, k) => { p.classList.toggle('is-on', k === i); p.inert = k !== i; });
+      moveThumb();
+      if (focus) tabs[i].focus();
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(i));
+      t.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); select(i ? 0 : 1, true); }
+      });
+    });
+    select(0);
+    resizeFns.push(moveThumb);
+    if (document.fonts) document.fonts.ready.then(moveThumb);
+
+    // plan choice
+    const plans = $$('.plan');
+    const labelFor = p => 'Choose ' + p.dataset.plan;
+    const interest = $('#fInterest');
+    const choose = card => {
+      plans.forEach(p => {
+        const on = p === card;
+        p.classList.toggle('is-chosen', on);
+        const b = $('.plan-btn', p);
+        b.setAttribute('aria-pressed', String(on));
+        b.textContent = on ? 'Chosen, book a call' : labelFor(p);
+      });
+      interest.value = card.dataset.plan;
+    };
+    const goForm = card => {
+      interest.value = card.dataset.plan;
+      interest.classList.remove('just-filled'); void interest.offsetWidth; interest.classList.add('just-filled');
+      scrollToEl($('#contactForm'));
+      focusAfterScroll($('#fName'));
+    };
+    plans.forEach(card => {
+      const b = $('.plan-btn', card);
+      card.addEventListener('click', e => { if (!e.target.closest('.plan-btn')) choose(card); });
+      b.addEventListener('click', () => { if (card.classList.contains('is-chosen')) goForm(card); else choose(card); });
+    });
+  }
+
+  /* ---------------- FAQ ---------------- */
+
+  function faq() {
+    const items = $$('.qa');
+    items.forEach(qa => {
+      const b = $('button', qa);
+      b.addEventListener('click', () => {
+        const open = b.getAttribute('aria-expanded') !== 'true';
+        items.forEach(o => { o.classList.remove('is-open'); $('button', o).setAttribute('aria-expanded', 'false'); });
+        if (open) { qa.classList.add('is-open'); b.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+  }
+
+  /* ---------------- Forms ---------------- */
+
+  const phoneOk = v => /^[+\d\s()]+$/.test(v.trim()) && v.replace(/\D/g, '').length >= 7;
+  const SEND_FAIL = 'Sorry, that did not send. Your details are still here, so check your internet connection and press Send again, or message us on WhatsApp.';
+
+  async function post(form) {
+    const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+    if (!res.ok) throw new Error('failed');
+  }
+
+  function forms() {
+    const f = $('#contactForm');
+    if (f) {
+      const btn = $('#submitBtn'), msg = $('#formMsg');
+      const rules = [
+        ['fName', v => v.trim().length > 1, 'Please add your name.'],
+        ['fPhone', phoneOk, 'Please add a phone number we can text, like 087 123 4567.'],
+        ['fTrade', v => v.trim().length > 1, 'Please tell us your business or trade.'],
+        ['fTown', v => v.trim().length > 1, 'Please add your town.'],
+        ['fConsent', (v, el) => el.checked, 'Please tick the box so we are allowed to contact you.']
+      ];
+      const check = ([id, fn, m]) => {
+        const el = $('#' + id), err = $('#' + id + 'Err');
+        const ok = fn(el.value, el);
+        el.setAttribute('aria-invalid', String(!ok));
+        err.textContent = ok ? '' : m;
+        if (ok) el.removeAttribute('aria-describedby'); else el.setAttribute('aria-describedby', id + 'Err');
+        return ok ? null : el;
+      };
+      rules.forEach(r => {
+        const el = $('#' + r[0]);
+        el.addEventListener(el.type === 'checkbox' ? 'change' : 'input', () => { if (el.getAttribute('aria-invalid') === 'true') check(r); });
+      });
+      f.addEventListener('submit', async e => {
+        e.preventDefault();
+        if (btn.classList.contains('is-sent') || btn.disabled) return;
+        let first = null;
+        rules.forEach(r => { const bad = check(r); if (bad && !first) first = bad; });
+        if (first) {
+          msg.className = 'form-msg bad';
+          msg.textContent = 'A few details are missing. Please check the fields marked in red.';
+          first.focus();
+          return;
+        }
+        btn.disabled = true;
+        btn.classList.add('is-busy');
+        msg.className = 'form-msg';
+        msg.textContent = 'Sending...';
+        try {
+          await post(f);
+          btn.classList.remove('is-busy');
+          btn.classList.add('is-sent');
+          btn.setAttribute('aria-label', 'Sent');
+          msg.className = 'form-msg ok';
+          msg.textContent = 'Sent. We will be in touch within one working day.';
+        } catch (_) {
+          btn.classList.remove('is-busy');
+          btn.disabled = false;
+          msg.className = 'form-msg bad';
+          msg.textContent = SEND_FAIL;
+        }
+      });
+    }
+
+    const q = $('#quickForm');
+    if (q) {
+      const input = $('#qPhone'), btn = $('#quickSend'), msg = $('#quickMsg');
+      q.addEventListener('submit', async e => {
+        e.preventDefault();
+        if (btn.disabled) return;
+        if (!phoneOk(input.value)) {
+          input.setAttribute('aria-invalid', 'true');
+          msg.textContent = 'Please add a phone number we can text, like 087 123 4567.';
+          input.focus();
+          return;
+        }
+        input.removeAttribute('aria-invalid');
+        btn.disabled = true;
+        btn.textContent = 'Sending';
+        msg.textContent = '';
+        try {
+          await post(q);
+          btn.innerHTML = '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="stroke-width:2.4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Sent';
+          msg.textContent = 'Sent. We will be in touch within one working day.';
+        } catch (_) {
+          btn.disabled = false;
+          btn.textContent = 'Send';
+          msg.textContent = SEND_FAIL;
+        }
+      });
+    }
+  }
+
+  /* ---------------- The stream of light ---------------- */
+
+  function stream() {
+    const main = $('#main'), svg = $('#stream');
+    if (!main || !svg) return;
+    const track = $('#streamTrack'), lit = [$('#streamGlow2'), $('#streamGlow'), $('#streamCore')];
+    const head = $('#streamHead'), halo = $('#streamHalo');
+    let samples = [], len = 0, cur = 0, tgt = 0, raf = 0, mainTop = 0;
+
+    function build() {
+      const mr = main.getBoundingClientRect();
+      mainTop = mr.top + scrollY;
+      const W = main.clientWidth, H = main.offsetHeight;
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      const narrow = W < 720;
+      let pts = $$('[data-stream]').map(el => {
+        const r = el.getBoundingClientRect();
+        const fixed = el.hasAttribute('data-stream-fixed');
+        const fy = parseFloat(el.dataset.streamY || '.5');
+        return { x: r.left + r.width / 2 - mr.left, y: r.top + r.height * fy + (fixed ? 0 : scrollY) - mainTop, end: el.hasAttribute('data-stream-end') };
+      }).filter(p => p.y > -200 && isFinite(p.y)).sort((a, b) => a.y - b.y);
+      if (pts.length < 2) return;
+      if (narrow) pts = pts.map((p, i) => (i === 0 || p.end) ? p : { x: i % 2 ? W - 10 : 10, y: p.y });
+      const d = smoothPath(pts.map(p => [p.x, p.y]));
+      track.setAttribute('d', d);
+      lit.forEach(p => p.setAttribute('d', d));
+      len = lit[2].getTotalLength();
+      lit.forEach(p => { p.style.strokeDasharray = `${len} ${len + 20}`; });
+      samples = [];
+      const N = Math.min(900, Math.max(200, Math.round(len / 12)));
+      let maxY = -1e9;
+      for (let k = 0; k <= N; k++) {
+        const l = len * k / N, pt = lit[2].getPointAtLength(l);
+        maxY = Math.max(maxY, pt.y);
+        samples.push([l, maxY]);
+      }
+      svg.style.opacity = narrow ? .5 : 1;
+      cur = Math.min(cur, len);
+      update();
+      paint();
+    }
+
+    function lengthAtY(y) {
+      if (!samples.length) return 0;
+      let lo = 0, hi = samples.length - 1;
+      if (y <= samples[0][1]) return 0;
+      if (y >= samples[hi][1]) return len;
+      while (hi - lo > 1) { const m = (lo + hi) >> 1; if (samples[m][1] < y) lo = m; else hi = m; }
+      const a = samples[lo], b = samples[hi];
+      return lerp(a[0], b[0], (y - a[1]) / Math.max(.001, b[1] - a[1]));
+    }
+
+    function paint() {
+      lit.forEach(p => { p.style.strokeDashoffset = (len - cur).toFixed(1); });
+      if (cur < 2) { head.style.opacity = halo.style.opacity = 0; return; }
+      const pt = lit[2].getPointAtLength(cur);
+      head.setAttribute('cx', pt.x); head.setAttribute('cy', pt.y);
+      halo.setAttribute('cx', pt.x); halo.setAttribute('cy', pt.y);
+      head.style.opacity = halo.style.opacity = cur >= len - 1 ? .6 : 1;
+    }
+
+    function loop() {
+      const diff = tgt - cur;
+      if (Math.abs(diff) < .5 || reduce) { cur = tgt; paint(); raf = 0; return; }
+      cur += diff * .12;
+      paint();
+      raf = requestAnimationFrame(loop);
+    }
+
+    function update() {
+      tgt = lengthAtY(scrollY + vh * .62 - mainTop);
+      if (!raf) raf = requestAnimationFrame(loop);
+    }
+
+    scrollFns.push(update);
+    let t;
+    const rebuild = () => { clearTimeout(t); t = setTimeout(build, 160); };
+    resizeFns.push(rebuild);
+    if ('ResizeObserver' in window) new ResizeObserver(rebuild).observe(main);
+    if (document.fonts) document.fonts.ready.then(rebuild);
+    addEventListener('load', rebuild);
+    build();
+  }
+
+  /* ---------------- Living background (Three.js) ---------------- */
+
+  function background() {
+    const canvas = $('#bg');
+    const weak = (navigator.hardwareConcurrency || 8) <= 2 || (navigator.deviceMemory || 8) <= 2;
+    if (reduce || weak || !window.THREE || !canvas) { root.classList.add('no-webgl'); return; }
+    const THREE = window.THREE;
+    let renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
+    } catch (e) { root.classList.add('no-webgl'); return; }
+    const mobile = innerWidth < 760;
+    const dpr = Math.min(devicePixelRatio || 1, mobile ? 1.5 : 1.75);
+    renderer.setPixelRatio(dpr);
+    renderer.setClearColor(0x000000, 1);
+    const scene = new THREE.Scene();
+    const camera = new THREE.Camera();
+
+    const uniforms = {
+      uTime: { value: 0 },
+      uAspect: { value: innerWidth / innerHeight },
+      uScroll: { value: 0 },
+      uPx: { value: dpr },
+      uA: { value: new THREE.Vector4() },
+      uB: { value: new THREE.Vector4() },
+      uC: { value: new THREE.Vector4() }
+    };
+
+    const common = `
+      uniform float uTime; uniform float uAspect; uniform float uScroll;
+      uniform vec4 uA; uniform vec4 uB; uniform vec4 uC;
+      const vec3 LIME = vec3(0.894, 0.973, 0.141);
+      const vec3 TEAL = vec3(0.2, 0.878, 0.69);
+      const vec3 BLUE = vec3(0.082, 0.086, 0.941);
+      vec2 strandPos(float t, vec3 s) {
+        float o = s.x;
+        float xn = (t * 2.0 - 1.0) * 1.25;
+        float xs = xn * clamp(uAspect, 0.6, 2.0);
+        float ph = uTime * 0.11 + uScroll;
+        float env = 0.45 + 0.55 * (0.5 + 0.5 * sin(xs * 0.9 + ph * 0.8 + s.y * 0.2));
+        float y = uA.x + uA.z * xn
+          + uA.y * sin(xs * uB.w * 0.6 + ph + s.y * 0.12)
+          + 0.05 * sin(xs * 1.9 - ph * 1.4 + o * 2.2)
+          + o * uA.w * env
+          + uC.z * o * 0.25 * sin(xs * 1.3 + ph * 1.2);
+        float d = xn - uB.y;
+        float yf = uB.z + o * (abs(d) * 0.95 + 0.02) + 0.04 * sin(ph * 1.7 + o * 6.0 + xs * 2.0) * abs(d);
+        y = mix(y, yf, uB.x);
+        return vec2(xn, y);
+      }
+      vec3 strandColor(float k) {
+        vec3 c = mix(LIME, TEAL, smoothstep(0.0, 0.55, k));
+        return mix(c, BLUE, smoothstep(0.5, 1.0, k));
+      }`;
+
+    // strands
+    const S = mobile ? 150 : 300, N = mobile ? 90 : 140;
+    const aT = new Float32Array(S * N), aS = new Float32Array(S * N * 3), pos = new Float32Array(S * N * 3);
+    const idx = [];
+    const seeds = [];
+    for (let s = 0; s < S; s++) {
+      let o = Math.random() * 2 - 1;
+      o = Math.sign(o) * Math.pow(Math.abs(o), 1.25);
+      const seed = [o, Math.random() * 6.283, Math.random() < .045 ? 2.2 : .35 + Math.random() * .65];
+      seeds.push(seed);
+      for (let n = 0; n < N; n++) {
+        const i = s * N + n;
+        aT[i] = n / (N - 1);
+        aS[i * 3] = seed[0]; aS[i * 3 + 1] = seed[1]; aS[i * 3 + 2] = seed[2];
+        if (n < N - 1) idx.push(i, i + 1);
+      }
+    }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+    geo.setAttribute('aT', new THREE.BufferAttribute(aT, 1));
+    geo.setAttribute('aS', new THREE.BufferAttribute(aS, 3));
+    geo.setIndex(idx);
+    const lineMat = new THREE.ShaderMaterial({
+      uniforms,
+      transparent: true,
+      depthTest: false,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+      vertexShader: common + `
+        attribute float aT; attribute vec3 aS;
+        varying vec3 vC; varying float vA;
+        void main() {
+          vec2 p = strandPos(aT, aS);
+          float k = clamp(0.5 + 0.55 * aS.x + 0.22 * sin(p.x * 1.4 + uTime * 0.09 + aS.y), 0.0, 1.0);
+          vC = strandColor(k);
+          float edge = smoothstep(0.0, 0.12, aT) * smoothstep(1.0, 0.88, aT);
+          float core = 1.0 - smoothstep(0.1, 1.0, abs(aS.x));
+          vA = (0.03 + 0.1 * core) * aS.z * edge * uC.x * mix(1.0, 0.7, smoothstep(0.5, 1.0, k));
+          gl_Position = vec4(p, 0.0, 1.0);
+        }`,
+      fragmentShader: `
+        varying vec3 vC; varying float vA;
+        void main() { gl_FragColor = vec4(vC, vA); }`
+    });
+    const lines = new THREE.LineSegments(geo, lineMat);
+    lines.frustumCulled = false;
+    scene.add(lines);
+
+    // particles drifting along strands
+    const PC = mobile ? 260 : 620;
+    const pS = new Float32Array(PC * 3), pP = new Float32Array(PC * 3), pPos = new Float32Array(PC * 3);
+    for (let i = 0; i < PC; i++) {
+      const sd = seeds[(Math.random() * seeds.length) | 0];
+      pS[i * 3] = sd[0]; pS[i * 3 + 1] = sd[1]; pS[i * 3 + 2] = Math.random();
+      pP[i * 3] = Math.random(); pP[i * 3 + 1] = .008 + Math.random() * .025; pP[i * 3 + 2] = 1.2 + Math.random() * 2.4;
+    }
+    const pGeo = new THREE.BufferGeometry();
+    pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
+    pGeo.setAttribute('aS', new THREE.BufferAttribute(pS, 3));
+    pGeo.setAttribute('aP', new THREE.BufferAttribute(pP, 3));
+    const pMat = new THREE.ShaderMaterial({
+      uniforms,
+      transparent: true,
+      depthTest: false,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+      vertexShader: common + `
+        uniform float uPx;
+        attribute vec3 aS; attribute vec3 aP;
+        varying vec3 vC; varying float vA;
+        void main() {
+          float t = fract(aP.x + uTime * aP.y);
+          vec2 p = strandPos(t, aS);
+          float edge = smoothstep(0.0, 0.1, t) * smoothstep(1.0, 0.9, t);
+          vA = (0.35 + 0.65 * aS.z) * edge * uC.x * (0.55 + 0.45 * sin(uTime * 2.0 + aP.x * 40.0));
+          vC = mix(vec3(1.0), LIME, 0.5 + 0.5 * sin(aP.x * 20.0));
+          gl_PointSize = aP.z * uPx;
+          gl_Position = vec4(p, 0.0, 1.0);
+        }`,
+      fragmentShader: `
+        varying vec3 vC; varying float vA;
+        void main() {
+          float d = length(gl_PointCoord - 0.5);
+          gl_FragColor = vec4(vC, vA * smoothstep(0.5, 0.0, d));
+        }`
+    });
+    const points = new THREE.Points(pGeo, pMat);
+    points.frustumCulled = false;
+    scene.add(points);
+
+    // Poses per section: A = centre y, amplitude, tilt, spread. B = fan, fan x, fan y, frequency. C = intensity, unused, twist, unused.
+    const poses = {
+      hero:     [.05, .16, -.12, .55,   1, .42, .06, 1.2,   1, 0, .2, 0],
+      reliable: [-.4, .22, .35, .32,    0, 0, 0, 1.4,       .75, 0, .5, 0],
+      tuesday:  [0, .12, -.22, .75,     0, 0, 0, 1.0,       .62, 0, .1, 0],
+      followup: [.3, .25, -.45, .3,     0, 0, 0, 1.8,       .75, 0, .6, 0],
+      services: [-.55, .2, .12, .28,    0, 0, 0, 1.3,       .62, 0, .3, 0],
+      how:      [0, .1, 0, .9,          .6, 0, 0, 1.0,      .9, 0, .2, 0],
+      numbers:  [.42, .2, .3, .32,      0, 0, 0, 1.5,       .7, 0, .4, 0],
+      pricing:  [-.12, .15, -.12, .48,  0, 0, 0, 1.1,       .72, 0, .2, 0],
+      faq:      [-.6, .2, .22, .22,     0, 0, 0, 1.4,       .55, 0, .3, 0],
+      contact:  [0, .2, .25, .6,        .8, .25, -.1, 1.2,  1, 0, .3, 0]
+    };
+    const poseFor = name => {
+      const p = (poses[name] || poses.hero).slice();
+      if (innerWidth < 1000 && name === 'hero') { p[5] = 0; p[6] = -.3; }
+      if (innerWidth < 1000 && name === 'contact') { p[5] = 0; p[6] = .1; }
+      if (innerWidth < 760) p[3] *= .8;
+      return p;
+    };
+    const cur = poseFor('hero'), tgt = cur.slice();
+    const sections = $$('[data-pose]');
+    let poseName = 'hero';
+    scrollFns.push(() => {
+      const mid = vh * .5;
+      for (const s of sections) {
+        const r = s.getBoundingClientRect();
+        if (r.top <= mid && r.bottom > mid) { poseName = s.dataset.pose; break; }
+      }
+      const p = poseFor(poseName);
+      for (let i = 0; i < 12; i++) tgt[i] = p[i];
+    });
+
+    let lastW = 0, lastH = 0;
+    function size(force) {
+      const w = innerWidth, h = innerHeight;
+      if (!force && w === lastW && Math.abs(h - lastH) < 140) return;
+      lastW = w; lastH = h;
+      renderer.setSize(w, h, false);
+      uniforms.uAspect.value = w / h;
+    }
+    size(true);
+    resizeFns.push(() => size(false));
+
+    let raf = 0, last = performance.now(), time = Math.random() * 40, scrollS = scrollY;
+    function frame(now) {
+      raf = requestAnimationFrame(frame);
+      const dt = Math.min(.05, (now - last) / 1000);
+      last = now;
+      time += dt;
+      const k = 1 - Math.exp(-dt * 1.6);
+      for (let i = 0; i < 12; i++) cur[i] += (tgt[i] - cur[i]) * k;
+      scrollS += (scrollY - scrollS) * (1 - Math.exp(-dt * 3));
+      if (plateState.covered) return;
+      uniforms.uTime.value = time;
+      uniforms.uScroll.value = scrollS / Math.max(600, vh) * .45;
+      uniforms.uA.value.set(cur[0], cur[1], cur[2], cur[3]);
+      uniforms.uB.value.set(cur[4], cur[5], cur[6], cur[7]);
+      uniforms.uC.value.set(cur[8], cur[9], cur[10], cur[11]);
+      renderer.render(scene, camera);
+    }
+    raf = requestAnimationFrame(frame);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) { cancelAnimationFrame(raf); raf = 0; }
+      else if (!raf) { last = performance.now(); raf = requestAnimationFrame(frame); }
+    });
+    canvas.addEventListener('webglcontextlost', e => { e.preventDefault(); cancelAnimationFrame(raf); raf = 0; root.classList.add('no-webgl'); });
+  }
+
+  /* ---------------- Boot ---------------- */
+
+  background();
+  nav();
+  glassFX();
+  heroTilt();
+  flow();
+  modal();
+  dashboard();
+  iso();
+  whatsapp();
+  services();
+  how();
+  pricing();
+  faq();
+  forms();
+  stream();
+  runScroll();
+
+  loader(() => {
+    reveals();
+    flowCtl.start();
+  });
+})();
+
+});
+</script>
+</body>
+</html>
